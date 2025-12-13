@@ -1,0 +1,1574 @@
+<!doctype html>
+<html lang="en" class="tw-dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sua Barbearia com Site Próprio e Agenda Cheia.</title>
+        <meta name="description" content="Sua Barbearia com Site Próprio e Agenda Cheia." />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Sua Barbearia com Site Próprio e Agenda Cheia." />
+        <meta property="og:description" content="Get all your AI models and tools in one place" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href="css/tailwind-runtime.css" /> -->
+        <link rel="stylesheet" href="css/tailwind-build.css">
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-');
+        </script>
+
+    </head>
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] 
+            tw-text-black dark:tw-bg-black  dark:tw-text-white"
+    >
+        <!-- <div class="tw-absolute tw-top-0 tw-left-1/2 tw--translate-x-1/2 tw-flex 
+                    tw-h-[100px] tw-w-full tw-max-w-[80%]">
+            <div class="header-gradient tw-h-full tw-w-full "></div>
+        </div> -->
+
+        <header
+            class="lg:tw-px-4 tw-max-w-[100vw] tw-max-w-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full 
+                    tw-text-gray-700 tw-bg-white dark:tw-text-gray-200 dark:tw-bg-[#17181b] tw-px-[3%] tw-rounded-md lg:tw-max-w-5xl tw-shadow-md dark:tw-shadow-gray-700
+                    lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]"
+        >
+            <a class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center" href="#">
+               
+
+                <div class="tw-h-[30px] tw-max-w-[100px]">
+                    <img
+                        src="./assets/images/home/logolc.png"
+                        alt="logo"
+                        class="tw-object-contain tw-h-full tw-w-full"
+                    />
+                </div>
+                
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <nav
+                    class="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col 
+                                max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center"
+                >
+                    <a class="header-links" href="#hero-section" onclick="event.preventDefault(); document.querySelector('#hero-section').scrollIntoView({behavior:'smooth'})"> Sobre </a>
+                    <a class="header-links" href="#gestao" onclick="event.preventDefault(); document.querySelector('#gestao').scrollIntoView({behavior:'smooth'})"> Gestão </a>
+                    <a class="header-links" href="#solucao" onclick="event.preventDefault(); document.querySelector('#solucao').scrollIntoView({behavior:'smooth'})"> Solução </a>
+                    <a class="header-links" href="#pricing" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})"> Preços </a>
+                   
+                    <div class="tw-relative tw-flex tw-flex-col tw-place-items-center">
+                        <div id="nav-dropdown-toggle-0" class="max-lg:tw-max-w-fit tw-flex header-links tw-gap-1  tw-place-items-center">
+                            <span class=""> Features </span>
+                            <i class="tw-text-sm bi bi-chevron-down"></i>
+                        </div>
+                        <nav id="nav-dropdown-list-0" 
+                            data-open="false"
+                            class="tw-scale-0 tw-opacity-0  lg:tw-fixed tw-flex lg:tw-top-[80px] lg:tw-left-1/2 lg:tw--translate-x-1/2 
+                                    tw-w-[90%] tw-rounded-lg max-lg:tw-h-0 max-lg:tw-w-0
+                                    lg:tw-h-[450px] tw-overflow-hidden
+                                     tw-bg-white dark:tw-bg-[#17181B] tw-duration-300 
+                                     tw-transition-opacity tw-transition-height tw-shadow-lg tw-p-4">
+                            <div class="tw-grid max-xl:tw-flex max-xl:tw-flex-col tw-justify-around tw-grid-cols-2 tw-w-full">
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-list-columns-reverse"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Prompt library </div>
+                                        <p>Comes packed with pre-made prompt templates</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-grid-1x2-fill"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Unified Interface </div>
+                                        <p class="">Test multiple AI models in one interface</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-globe"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Realtime web search </div>
+                                        <p class="">Search the internet in realtime</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-image-fill"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                            Image generation
+                                        </div>
+                                        <p class="">Generate images from prompts</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-calendar-range"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                            History
+                                        </div>
+                                        <p class="">Continue from where you left off</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-translate"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                            Multilingual
+                                        </div>
+                                        <p class="">Converse in multiple languages</p>
+                                    </div> 
+                                </a>
+                            </div>           
+                        </nav>
+                    </div>
+                    
+                </nav>
+                <div
+                    class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full 
+                            max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <button type="button" onclick="toggleMode()" class="header-links tw-text-gray-600 dark:tw-text-gray-300" title="toggle-theme" 
+                            id="theme-toggle"> 
+                        <i class="bi bi-sun" id="toggle-mode-icon"></i>
+                    </button>
+                    <a
+                        href="#pricing"
+                        aria-label="Try Pixa Playground" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})"
+                        class="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform 
+                                    tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Planos</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-gray-500 lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="hero-section tw-relative tw-mt-20 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-mt-[100px]"
+            id="hero-section"
+        >
+
+            <!-- video container -->
+            <div class="tw-fixed tw-bg-[#000000af] dark:tw-bg-[#80808085] tw-top-0 tw-left-1/2 tw--translate-x-1/2 tw-z-20 tw-transition-opacity
+                tw-duration-300 tw-scale-0 tw-opacity-0 tw-p-2
+                tw-w-full tw-h-full tw-flex tw-place-content-center tw-place-items-center" id="video-container-bg">
+
+                <div class="tw-max-w-[80vw] max-lg:tw-max-w-full max-lg:tw-w-full tw-scale-0 tw-transition-transform tw-duration-500 tw-p-6 tw-rounded-xl  max-lg:tw-px-2 tw-w-full tw-gap-2 tw-shadow-md 
+                            tw-h-[90vh] max-lg:tw-h-auto max-lg:tw-min-h-[400px] tw-bg-white dark:tw-bg-[#16171A] tw-max-h-full
+                            " id="video-container">
+                    <div class="tw-w-full tw-flex">
+                        <button type="button" onclick="closeVideo()" class="tw-ml-auto tw-text-xl" title="close">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </button>
+                    </div>
+                    <div class="tw-flex tw-w-full  tw-rounded-xl tw-px-[5%] max-md:tw-px-2 tw-min-h-[300px] tw-max-h-[90%] tw-h-full">
+
+                        <div class="tw-relative tw-bg-black tw-min-w-full tw-min-h-full tw-overflow-clip tw-rounded-md">
+                            <!-- add your youtube video link here -->
+                            <iframe class="tw-absolute tw-top-[50%] tw--translate-y-[50%] tw-left-[50%] tw--translate-x-[50%] tw-w-full tw-h-full" 
+                                src="https://www.youtube.com/embed/6j4fPVkA3EA?si=llcTrXPRM-MRXDZB&amp;controls=0&rel=0&showinfo=0&autoplay=1&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+        
+                    </div>
+                </div>  
+            </div>
+
+            <div    
+                class="hero-bg-gradient tw-relative tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+            >
+
+                <div class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-1/2 tw-top-[10%] tw-h-[120px] tw-w-[120px]"
+                ></div> 
+
+                <div
+                    class="tw-flex tw-flex-col tw-min-h-[60vh] tw-place-content-center tw-items-center"
+                >
+                    <h2
+                        class="reveal-up tw-text-center tw-text-7xl tw-font-semibold tw-uppercase tw-leading-[90px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class=""> Sua Barbearia com Site Próprio e Agenda Cheia. </span>
+                    </h2>
+                    <div
+                        class="reveal-up tw-mt-8 tw-max-w-[450px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center
+                         tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full"
+                    >
+                        Deixe seus clientes agendarem sozinhos, escolha suas cores, coloque sua logo e organize sua gestão em um único lugar. Sem programar nada.
+                    </div>
+
+                    <div
+                        class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4"
+                    >
+                        <a href="#pricing" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})" class="btn tw-group tw-shadow-lg !tw-rounded-xl !tw-py-4 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03] tw-mx-auto">
+                            <span>ver planos</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- prompt container -->
+                <div
+                    class="reveal-up  tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container"
+                >
+                    <div class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[5%] tw-h-[200px] tw-w-[200px]"
+                    ></div>    
+
+                    <div
+                        class="tw-relative tw-max-w-[80%] tw-bg-white dark:tw-bg-black tw-border-[1px] dark:tw-border-[#36393c] lg:tw-w-[1024px]
+                                lg:tw-h-[650px]  tw-flex tw-shadow-xl max-lg:tw-h-[450px] max-lg:tw-w-full
+                                tw-overflow-hidden
+                                tw-min-w-[320px] md:tw-w-full tw-min-h-[450px] tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                        id="dashboard"
+                    >  
+
+                        <div class="purple-bg-grad tw-max-w-[80%] reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[0%] lg:tw-max-w-[1000px] tw-h-full tw-w-full"
+                        ></div> 
+                        <div class="animated-border tw-w-full tw-h-full tw-p-[2px]">
+                            <div class="tw-w-full tw-h-full tw-rounded-xl tw-overflow-hidden tw-flex">
+                                <img src="./assets/images/home/hero.png" alt="Hero" class="reveal-up tw-w-full tw-h-full tw-object-cover">
+                                <!-- sign-up pop-up -->
+                                <div class="tw-hidden tw-absolute tw-rounded-xl tw-text-center tw-transition-transform tw-duration-300 tw-scale-0 tw-backdrop-blur-lg tw-flex tw-flex-col tw-p-10 tw-place-items-center 
+                                        tw-gap-4 tw-w-full tw-h-full dark:tw-bg-[#000000b4] tw-bg-[#ffffff6a] firefox:tw-bg-white tw-top-0 tw-left-0 tw-z-20"
+                                        id="signup-prompt"
+                                        >
+
+                                    <h4 class="tw-mt-6 tw-text-3xl max-md:tw-text-xl">
+                                        Signup to continue your conversation
+                                    </h4>
+
+                                    <div class="tw-flex tw-gap-1 tw-place-items-center">
+                                        <div class="tw-flex tw--space-x-4">
+                                            <img class="tw-z-10 tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white" src="assets/images/people/man.jpg" alt="Avatar 1">
+                                            <img class="tw-z-[4] tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white" src="assets/images/people/women.jpg" alt="Avatar 2">
+                                            <img class="tw-z-[3] tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white" src="assets/images/people/man2.jpg" alt="Avatar 3">
+                                            <img class="tw-z-[2] tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white" src="assets/images/people/man.jpg" alt="Avatar 4">
+                                            <img class="tw-z-[1] tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white" src="assets/images/people/women.jpg" alt="Avatar 5">
+                                        </div>
+                                        <p>+20,000</p>
+                                    </div>
+
+                                    <div class="tw-mt-3 tw-text-lg">
+                                        Join Ben and 20,000+ users using Pixa
+                                    </div>
+
+                                    <a href="#" class="btn">
+                                        Sign up
+                                    </a>
+
+                                </div>
+
+                                <div class="tw-hidden tw-min-w-[250px] max-lg:tw-hidden tw-p-2 tw-gap-2 tw-flex tw-flex-col tw-bg-gray-100 
+                                            dark:tw-bg-[#171717] tw-h-full">
+                                    <!-- <h3 class="tw-text-xl tw-uppercase">
+                                        Pixa
+                                    </h3> -->
+                                    <div class="tw-h-[30px] tw-w-fit tw-max-w-[100px]">
+                                        <img
+                                            src="./assets/images/home/logolc.png"
+                                            alt="logo"
+                                            class="tw-object-contain tw-opacity-80 tw-h-full tw-w-full"
+                                        />
+                                    </div>
+
+                                    <div class="tw-flex tw-mt-2 tw-gap-2 tw-flex-col">
+                                        <a href="#link-to-img-gen" 
+                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                            <i class="bi bi-image"></i>
+                                            <span>Image generator</span>
+                                        </a>
+                                        <a href="#link-to-pdf-gen" 
+                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                            <i class="bi bi-file-pdf"></i>
+                                            <span>Pdf generator</span>
+                                        </a>
+                                        <a href="#link-to-code-gen" 
+                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                            <i class="bi bi-code-square"></i>
+                                            <span>Code generator</span>
+                                        </a>
+                                        <a href="#" 
+                                            class="tw-flex tw-rounded-sm tw-group tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                            <span>Show all</span>
+                                            <i class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover:tw-translate-x-1"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="tw-mt-auto tw-w-full tw-flex tw-px-6 tw-place-content-center">
+                                        <a href="#sign-up" class="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] 
+                                                                hover:!tw-bg-black hover:!tw-text-white
+                                                                dark:hover:!tw-bg-white dark:hover:!tw-text-black
+                                                                !tw-border-[1px] !tw-border-black !tw-text-black
+                                                                dark:!tw-border-white dark:!tw-text-white
+                                                                ">
+                                            Signup
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="tw-hidden tw-flex tw-w-full tw-p-4 tw-bg-white dark:tw-bg-black tw-h-full tw-flex-col" id="pixa-playground">
+                                    <div class="tw-relative tw-w-full tw-flex tw-place-content-center tw-h-full">
+                                        <div class="tw-absolute tw-top-[20%] max-lg:tw-top-[30%] tw-left-1/2 tw--translate-x-1/2  tw-w-[150px] tw-h-[150px]">
+                                            <img src="./assets/images/home/logolc.png" class="tw-w-full tw-h-full tw-object-contain tw-opacity-20"
+                                                alt="LuxCut logo">
+                                        </div>
+                                        <div class="prompt-container tw-overflow-y-auto tw-px-[5%] max-lg:tw-px-2 scrollbar max-lg:tw-max-h-[80%] tw-max-h-[550px] 
+                                                    max-lg:tw-mt-12 tw-w-full tw-h-full tw-z-10 tw-flex tw-flex-col" id="prompt-container">
+                                            <div class="tw-w-full tw-flex tw-text-center tw-flex-col tw-place-content-center">
+                                                <h2 class="tw-text-4xl max-md:tw-text-2xl max-md:tw-mt-3 tw-opacity-80">
+                                                    Try Prompts
+                                                </h2>
+                                                <div class="tw-inline tw-mt-6 max-md:tw-mt-3">
+                                                    <span id="prompts-sample" ></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <form action="" id="prompt-form" onsubmit="return false;" 
+                                        class="tw-place-content-center tw-mt-auto tw-h-[50px] tw-p-1 tw-place-items-center 
+                                                tw-justify-around tw-flex tw-gap-1 tw-bottom-2 tw-w-full tw-rounded-md tw-bg-[#f3f4f6] dark:tw-bg-[#171717]">
+                                        <div class="tw-min-w-[140px] tw-min-h-[80px] max-lg:tw-absolute tw-z-10 tw-top-1 tw-left-1/2 max-lg:tw--translate-x-1/2 
+                                                    tw-flex tw-flex-col tw-text-sm tw-gap-1 tw-place-content-center">
+                                            <div class="dropdown tw-p-2 tw-rounded-md  tw-bg-[#f3f4f6] dark:tw-bg-[#171717]" id="dropdown1">
+                                                <!-- store the value of the dropdown-->
+                                                <input type="hidden" class="dropdown-input">
+                                                <button
+                                                    type="button"
+                                                    class="dropdown-toggle tw-flex tw-gap-5"
+                                                >
+                                                    <span class="tw-flex tw-w-fit tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/brand-logos/openai.svg" 
+                                                                alt="Gpt3.5" class="dropdown-select-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-select-text">GPT 4o</span>
+                                                    </span>
+                                                    <i class="bi bi-chevron-down tw-ml-auto lg:tw-hidden"
+                                                        ></i>
+                                                    <i class="bi bi-chevron-up tw-ml-auto lg:tw-block tw-hidden"
+                                                        ></i>
+                                                </button>
+                                                <ul class="dropdown-menu tw-shadow-md tw-bottom-[50px] max-lg:tw-top-[105%] max-lg:tw-bottom-[unset]">
+                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/brand-logos/openai.svg" alt="Gpt-4o" 
+                                                                    class="dropdown-menu-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-text">GPT 4o</span>
+                                                    </li>
+                                                    
+                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/brand-logos/googlegemini.svg" alt="Gemini" 
+                                                            class="dropdown-menu-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-text">Gemini</span>
+                                                    </li>
+                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/brand-logos/meta.svg" alt="Llama" 
+                                                                    class="dropdown-menu-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-text">Llama 3</span>
+                                                    </li>
+                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/brand-logos/claude.svg" alt="Perplexity" 
+                                                                class="dropdown-menu-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-text">Claude</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <input placeholder="How to develop a saas app?" 
+                                                type="text" class="tw-p-2 !tw-outline-none tw-bg-transparent tw-border-none tw-w-full tw-placehoder-gray-500
+                                                                    dark:tw-placeholder-opacity-60 dark:tw-placeholder-gray-300 tw-max-w-[80%] tw-h-full" 
+                                                name="prompt" >
+                                        <button type="submit" class="btn !tw-bg-[#6366f1] !tw-p-2 !tw-px-3 !tw-text-white" title="submit">
+                                            <i class="bi bi-arrow-up"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+            <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
+                confiado pelos melhores
+            </h2>
+
+            <div class="reveal-up carousel-container">
+                <div
+                    class="carousel lg:w-place-content-center tw-mt-10 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+                >
+                    <!-- add the brands using your app  -->
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/google.svg"
+                            alt="Google"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/microsoft.svg"
+                            alt="Microsoft"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/adobe.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/airbnb.svg"
+                            alt="Airbnb"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/stripe.svg"
+                            alt="Stripe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/reddit.svg"
+                            alt="Reddit"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            
+        <section
+            class="tw-relative tw-flex  tw-w-full tw-min-h-[100vh] max-lg:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+        >   
+             <div class="tw-w-full  tw-place-content-center tw-items-center 
+                        tw-flex tw-flex-col tw-max-w-[900px] tw-gap-4 tw-p-4">
+               <div class="purple-bg-grad  reveal-up tw-absolute tw-right-[20%] tw-top-[20%] tw-h-[200px] tw-w-[200px]"
+                ></div>
+                <h2 class="reveal-up tw-text-6xl max-lg:tw-text-4xl tw-text-center tw-leading-normal tw-uppercase">
+                    
+                    <span class="tw-font-semibold">Seu link na bio, sua agenda cheia. Clientes agendam a qualquer hora pelo seu próprio link, sem apps ou burocracia.</span>
+                </h2>
+                <p class="reveal-up tw-mt-8 tw-max-w-[650px] tw-text-gray-900 dark:tw-text-gray-200 tw-text-center max-md:tw-text-sm">   
+                    Entregamos sua barbearia online pronta. Seu cliente acessa, agende em segundos e você só se preocupa em fazer o corte perfeito.
+                </p>
+                <div class="reveal-up tw-flex tw-mt-8">
+                    <a href="#features" 
+                        class="tw-shadow-md hover:tw-shadow-xl dark:tw-shadow-gray-800 tw-transition-all tw-duration-300 
+                                        tw-border-[1px] tw-p-3 tw-px-4 tw-border-black dark:tw-border-white tw-rounded-md">
+                        Ver Funcionalidades
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+        >   
+
+
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-w-full tw-h-full tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h2
+                        class="tw-text-6xl tw-font-medium max-md:tw-text-3xl tw-p-2"
+                        id="features"
+                    >
+                        Domine cada detalhe do negócio.
+                    </h2>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-flex-col tw-max-w-[1150px] max-lg:tw-max-w-full tw-h-full 
+                            tw-p-4 max-lg:tw-place-content-center tw-gap-8 "
+                >   
+
+                    <div class="max-xl:tw-flex max-xl:tw-flex-col tw-place-items-center tw-grid tw-grid-cols-3 tw-gap-8 
+                                tw-place-content-center tw-auto-rows-auto">
+                        <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                            <a href="#" class=" tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full  tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02] tw-overflow-hidden">
+                                <div class="tw-overflow-hidden tw-w-full tw-min-h-[180px] tw-h-[180px]">
+                                    <img src="./assets/images/home/agendamento.png" class="tw-w-full tw-object-contain tw-h-auto" 
+                                        alt="Agendamento Online">
+                                    <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                                </div>
+                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Agendamento Online</h2>
+                                <p class="tw-text-base tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                    Seus clientes agendam 24h por dia. O sistema organiza sua fila automaticamente.
+                                </p>
+                                <div class="tw-flex tw-items-center tw-gap-2 tw-text-blue-600 dark:tw-text-blue-400 tw-font-medium tw-mt-2">
+                                    <span>Leia sobre</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        
+                        <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                            <a href="#" class=" tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full  tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02] tw-overflow-hidden">
+                                <div class="tw-w-full tw-min-h-[180px] tw-h-[180px] tw-overflow-hidden">
+                                    <img src="./assets/images/home/unified.jpg" 
+                                        alt="Personalização Total" class="tw-w-full tw-h-auto tw-object-contain">
+                                </div>
+                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Personalização Total</h2>
+                                <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                    Mude as cores, fontes e logo do site para ficarem idênticos à identidade da sua barbearia.
+                                </p>
+                                <div class="tw-flex tw-items-center tw-gap-2 tw-text-blue-600 dark:tw-text-blue-400 tw-font-medium tw-mt-2">
+                                    <span>Leia sobre</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        
+                        <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                            <a href="#" class=" tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full  tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02] tw-overflow-hidden">
+                                <div class="tw-w-full tw-flex tw-place-content-center tw-min-h-[180px] tw-h-[180px] tw-rounded-xl tw-overflow-hidden">
+                                    <div class="tw-grid tw-grid-cols-2 tw-grid-rows-2 tw-gap-2 tw-w-full tw-h-full tw-p-2">
+                                        <div class="tw-w-full tw-h-full tw-rounded-md tw-flex tw-items-center tw-justify-center tw-bg-white/5 dark:tw-bg-white/10">
+                                            <img src="./assets/images/home/grafico1.png" class="tw-w-full tw-h-full tw-object-contain" alt="Gráfico 1">
+                                        </div>
+                                        <div class="tw-w-full tw-h-full tw-rounded-md tw-flex tw-items-center tw-justify-center tw-bg-white/5 dark:tw-bg-white/10">
+                                            <img src="./assets/images/home/grafico2.png" class="tw-w-full tw-h-full tw-object-contain" alt="Gráfico 2">
+                                        </div>
+                                        <div class="tw-w-full tw-h-full tw-rounded-md tw-flex tw-items-center tw-justify-center tw-bg-white/5 dark:tw-bg-white/10">
+                                            <img src="./assets/images/home/grafico3.png" class="tw-w-full tw-h-full tw-object-contain" alt="Gráfico 3">
+                                        </div>
+                                        <div class="tw-w-full tw-h-full tw-rounded-md tw-flex tw-items-center tw-justify-center tw-bg-white/5 dark:tw-bg-white/10">
+                                            <img src="./assets/images/home/grafico4.png" class="tw-w-full tw-h-full tw-object-contain" alt="Gráfico 4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Gestão Financeira</h2>
+                                <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                    Saiba exatamente quanto faturou no dia, na semana e no mês com relatórios simples.
+                                </p>
+                                <div class="tw-flex tw-items-center tw-gap-2 tw-text-blue-600 dark:tw-text-blue-400 tw-font-medium tw-mt-2">
+                                    <span>Leia sobre</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="reveal-up tw-w-full md:tw-h-[350px] max-md:tw-min-h-[350px] tw-flex">
+                        <a href="#" class=" tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                            max-md:tw-flex-col tw-w-full tw-h-full  tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                            hover:tw-scale-[1.02] tw-overflow-hidden">
+                            <div class="tw-text-6xl tw-overflow-hidden tw-rounded-xl tw-w-full tw-h-full max-md:tw-h-[180px]">
+                                <img src="./assets/images/home/multibarbeiros.png" class="tw-w-full tw-object-contain tw-h-full" 
+                                    alt="Multi-Barbeiros">
+                                <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                            </div>
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Multi-Barbeiros</h2>
+                                <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                    Cadastre sua equipe e gerencie as comissões e agendas de cada profissional.
+                                </p>
+                                <div class="tw-flex tw-items-center tw-gap-2 tw-text-blue-600 dark:tw-text-blue-400 tw-font-medium tw-mt-2">
+                                    <span>Leia sobre</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-mt-10 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center lg:tw-p-6"
+            id="gestao"
+        >
+
+            <div
+                class="reveal-up tw-mt-[5%] tw-flex tw-h-full tw-w-full tw-place-content-center 
+                        tw-gap-2 tw-p-4 max-lg:tw-max-w-full max-lg:tw-flex-col"
+            >
+
+                <div class="tw-relative tw-flex tw-max-w-[30%] max-lg:tw-max-w-full tw-flex-col 
+                            tw-place-items-start tw-gap-4  tw-p-2 max-lg:tw-place-items-center 
+                            max-lg:tw-place-content-center max-lg:tw-w-full">
+                    <div
+                        class="tw-top-40 tw-flex tw-flex-col lg:tw-sticky tw-place-items-center tw-max-h-fit tw-max-w-[850px] max-lg:tw-max-h-fit max-lg:tw-max-w-[320px] tw-overflow-hidden"
+                    >
+                        <h2 class="tw-text-5xl tw-font-serif tw-text-center tw-font-medium  max-md:tw-text-3xl">
+                            Gestão inteligente e simplificada
+                        </h2>
+
+                    </div>
+                   
+                </div>
+
+                <div
+                    class="tw-flex tw-flex-col tw-gap-10 tw-h-full tw-max-w-1/2 max-lg:tw-max-w-full tw-px-[10%]
+                             max-lg:tw-px-4 max-lg:tw-gap-3 max-lg:tw-w-full lg:tw-top-[20%]
+                             tw-place-items-center
+                             "
+                >   
+                    <div class="reveal-up tw-h-fit tw-w-[450px] max-md:tw-w-full">
+                        <a href="#"
+                            class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl 
+                                    hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all
+                                  tw-p-8 tw-group/card tw-overflow-hidden"
+                        >
+                            <div class="tw-text-5xl max-md:tw-text-3xl tw-text-white">
+                                <i class="bi bi-speedometer2"></i>
+                            </div>
+
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    Profissionalize sua gestão. Eleve sua barbearia.
+                                </h3>
+                                <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                    A ferramenta definitiva para barbearias que já ultrapassaram o amadorismo. Centralize agendamentos, financeiro e branding em uma plataforma robusta e estável.
+                                </p>
+
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="reveal-up tw-h-fit tw-w-[450px] max-md:tw-w-full">
+                        <a href="#"
+                            class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl
+                                 hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card tw-overflow-hidden"
+                        >
+                            <div class="tw-text-5xl max-md:tw-text-3xl tw-text-white">
+                                <i class="bi bi-brush"></i>
+                            </div>
+
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    Sua Marca, Não a Nossa
+                                </h3>
+                                <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                    O site leva o seu logo e as suas cores. Não pareça um amador usando sistemas genéricos, e fazendo marketing para apps/sites de terceiros.
+                                </p>
+
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="reveal-up tw-h-fit tw-w-[450px] max-md:tw-w-full">
+                        <a href="#"
+                            class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg tw-duration-300 
+                                tw-transition-all dark:tw-shadow-[#171717] tw-p-8 tw-group/card tw-overflow-hidden"
+                        >
+                            <div class="tw-text-5xl max-md:tw-text-3xl tw-text-white">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    Agenda Cheia Enquanto Você Dorme
+                                </h3>
+                                <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                    40% dos agendamentos ocorrem fora do horário comercial. Nosso sistema trabalha 24h por você.
+                                </p>
+
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="reveal-up tw-h-fit tw-w-[450px] max-md:tw-w-full">
+                        <a href="#"
+                            class="tw-flex tw-w-full dark:tw-shadow-[#171717] tw-h-full tw-gap-8 tw-rounded-xl  hover:tw-shadow-lg tw-duration-300 
+                            tw-transition-all tw-p-8 tw-group/card tw-overflow-hidden"
+                        >
+                            <div class="tw-text-5xl max-md:tw-text-3xl tw-text-white">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    Controle na Palma da Mão
+                                </h3>
+                                <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                    Saiba exatamente quanto faturou hoje, na semana e no mês com um clique. Chega de somar papelzinho no fim do dia.
+                                </p>
+
+                                
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="reveal-up tw-h-fit tw-w-[450px] max-md:tw-w-full">
+                        <a href="#"
+                            class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl dark:tw-shadow-[#171717] hover:tw-shadow-lg tw-duration-300 
+                                tw-transition-all tw-p-8 tw-group/card tw-overflow-hidden"
+                        >
+                            <div class="tw-text-5xl max-md:tw-text-3xl tw-text-white">
+                                <i class="bi bi-cpu"></i>
+                            </div>
+
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    Tecnologia de ponta. Sem precisar entender de tecnologia.
+                                </h3>
+                                <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                    Criamos o sistema mais fácil do mercado. Se você sabe usar o WhatsApp, sabe usar nossa plataforma.
+                                </p>
+
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="reveal-up tw-h-fit tw-w-[450px] max-md:tw-w-full">
+                        <a href="#"
+                            class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl 
+                                    hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card tw-overflow-hidden"
+                        >
+                            <div class="tw-text-5xl max-md:tw-text-3xl tw-text-white">
+                                <i class="bi bi-people"></i>
+                            </div>
+
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    Sua barbearia com cara de franquia.
+                                </h3>
+                                <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                    Por que as grandes redes crescem tanto? Porque elas têm processos. Tenha a mesma tecnologia das maiores barbearias do Brasil e mostre para o seu cliente que você joga na série A.
+                                </p>
+
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </section>
+
+
+        <section
+            class="tw-relative tw-flex  tw-w-full tw-min-h-[110vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+            id="solucao"
+        >   
+             <div class="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-items-center 
+                        tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
+               
+                <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal">
+                    A ferramenta completa
+                </h3>
+                <!-- <p class="reveal-up tw-mt-3 tw-max-w-[600px] tw-text-center ">
+                </p> -->
+                
+                <div class="tw-mt-8 tw-relative tw-gap-10 tw-p-4 tw-grid tw-place-items-center tw-grid-cols-3 max-lg:tw-flex max-lg:tw-flex-col">
+
+
+                    <div class="reveal-up  tw-w-[350px] tw-border-[1px] tw-rounded-md tw-place-items-center tw-p-3
+                                 tw-bg-[#f2f3f4] max-md:tw-w-[320px] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
+
+                        <div class="tw-w-full tw-h-[140px]
+                                    tw-p-1
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <i class="bi bi-calendar-x tw-text-black dark:tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            Imprevistos Controlados
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            Bloqueie horários específicos ou o dia todo de um único barbeiro com um clique, sem afetar a agenda do resto da equipe.
+                        </p>
+                    </div>
+                    
+                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-rounded-md tw-place-items-center tw-p-3
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
+
+                        <div class="tw-w-full tw-h-[140px]
+                                    tw-p-1
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <i class="bi bi-bar-chart-line tw-text-black dark:tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            Adeus, Achismo
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            Gráficos precisos de faturamento diário, semanal e mensal. Saiba exatamente quanto dinheiro entrou e para onde ele foi.
+                        </p>
+                    </div>
+
+                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-rounded-lg tw-place-items-center tw-p-3
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
+
+                        <div class="tw-w-full tw-h-[140px]
+                                    tw-p-1
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <i class="bi bi-cash-stack tw-text-black dark:tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            O Que Dá Lucro?
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            Descubra quais cortes e produtos são os campeões de venda e quais estão apenas ocupando espaço na sua prateleira.
+                        </p>
+                    </div>
+
+                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-rounded-lg tw-place-items-center tw-p-3
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
+
+                        <div class="tw-w-full tw-h-[140px]
+                                    tw-p-1
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <i class="bi bi-award tw-text-black dark:tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            Comissões Automáticas
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            Configure a porcentagem de cada barbeiro e o sistema calcula o repasse automaticamente a cada corte finalizado.
+                        </p>
+                    </div>
+
+                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-lg tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+
+                        <div class="tw-w-full tw-h-[180px]
+                                    tw-p-2
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <i class="bi bi-shield-lock tw-text-black dark:tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            Hierarquia de Acesso
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            Defina o que cada um vê. O barbeiro acessa a agenda dele; você acessa o financeiro global. Seus dados protegidos.
+                        </p>
+                    </div>
+
+                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-rounded-lg tw-place-items-center tw-p-3
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
+
+                        <div class="tw-w-full tw-h-[140px]
+                                    tw-p-1
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <i class="bi bi-people-fill tw-text-black dark:tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            Performance da Equipe
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            Métricas individuais de produtividade. Saiba quem são os talentos que estão carregando o faturamento da barbearia.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex  tw-w-full tw-min-h-[100vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+        >   
+            <div class="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-place-items-center 
+                        tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
+               
+                <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal">
+                    Tudo num só lugar
+                </h3>
+                <p class="reveal-up tw-mt-3 tw-max-w-[800px] tw-text-center ">
+                    Não entregamos apenas uma agenda. Entregamos um ecossistema completo que conecta a experiência do seu cliente com a gestão do seu negócio.
+                </p>
+                
+                <div class="tw-mt-8 tw-relative tw-flex max-lg:tw-flex-col tw-gap-5">
+
+                    <div
+                        class="reveal-up tw-flex tw-w-full tw-max-w-[650px] max-md:tw-max-w-full tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px]
+                            tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-2 tw-shadow-xl max-lg:tw-w-[320px]"
+                            >
+                        <img src="./assets/images/home/front.png" 
+                            alt="Front">
+                        <div class="tw-mt-2 tw-text-center tw-text-gray-800 dark:tw-text-gray-200 tw-text-sm">
+                            Experiência do Cliente (Site): Design premium que valoriza sua marca e facilita o agendamento.
+                        </div>
+                    </div>
+
+                     <div
+                        class="reveal-up tw-flex tw-w-full tw-max-w-[650px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px]
+                            tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-2 tw-shadow-xl max-lg:tw-w-[320px]"
+                            >
+                        <img src="./assets/images/home/back.png" 
+                            alt="Back">
+                        <div class="tw-mt-2 tw-text-center tw-text-gray-800 dark:tw-text-gray-200 tw-text-sm">
+                            Gestão do Dono e Barbeiros (Painel): Dados precisos, bloqueio de horários, fechamento de caixa simplificado, e muito mais.
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#pricing" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})" class="reveal-up tw-group tw-shadow-xl btn tw-flex tw-gap-2 tw-mt-6 tw-mx-auto">
+                    <span>Ver planos</span>
+                </a>
+
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+        >
+            <h3
+                class="reveal-up tw-text-4xl tw-font-medium tw-text-center max-md:tw-text-2xl"
+            >
+                Não acredite apenas na nossa palavra.
+            </h3>
+            <!-- Testimonials -->
+            <div
+                class="tw-mt-20 tw-gap-10 tw-space-y-8  max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
+            >
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Renan Silva</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">Barbearia Nobre</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        Eu usava aqueles apps de agenda onde o cliente vê meus concorrentes na mesma tela. Mudar para um site próprio foi a melhor decisão. Agora, quando o cliente entra, ele vê a MINHA logo e as MINHAS cores. A percepção de valor do meu corte subiu na hora. Hoje, 95% dos meus clientes agendam sozinhos pelo link. O sistema me devolveu a paz para trabalhar focado.
+                    </p>
+                </div>
+
+                 <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/women.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="women"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Felipe 'Fade'</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">Studio 7 Cuts</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        Sempre fui bom de tesoura e péssimo com números. O painel financeiro me salvou. Com dois cliques eu sei exatamente quanto faturei no dia e qual barbeiro da equipe está rendendo mais. Larguei o caderno de papel definitivamente.
+                    </p>
+                </div>
+
+                 <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Carlos Eduardo</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">The Gentleman Barber</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        Tinha medo de ser difícil de mexer, mas configurei tudo em 10 minutos. O site é lindo e muito rápido no celular. Meus clientes, até os mais velhos, elogiaram que ficou muito mais fácil marcar horário.
+                    </p>
+                </div>
+
+                 <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">André Viana</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">Viking Style</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        Cobrei R$ 10,00 a mais no corte e ninguém reclamou. Por quê? Porque agora o cliente entra num site exclusivo, recebe lembrete, vê minha logo... A experiência ficou premium. O sistema se pagou no primeiro dia só com essa diferença.
+                    </p>
+                </div>
+
+                 <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/women.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="women"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Gabriel</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">Barbearia Blackout</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        Ter um site próprio com a minha identidade fez toda a diferença. Os lembretes automáticos reduziram faltas e o agendamento ficou muito mais profissional.
+                    </p>
+                </div>
+
+                 <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Jamie</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">SnapFist.ai, ceo</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nihil vitae fuga ab reiciendis optio et corporis dolorem alias deserunt, molestias in iusto! Ratione, quisquam incidunt. Reprehenderit ipsam officiis enim.
+                    </p>
+                </div>
+               
+            </div>
+        </section>
+
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-gap-6 tw-place-items-center tw-p-[2%]"
+            id="pricing"
+        >
+            <h3
+                class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl"
+            >
+                Quanto vale a sua organização?
+            </h3>
+            <p class="reveal-up tw-mt-3 tw-max-w-[800px] tw-text-center tw-text-gray-800 dark:tw-text-gray-200">
+                Menos que o valor de um corte por mês. Escolha o plano ideal para o seu momento.
+            </p>
+            <!-- pricing -->
+            <div
+                class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+            >
+                <div
+                    class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px]
+                            tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-5xl max-md:tw-text-3xl tw-font-semibold">R$ 25</span>
+                        <span class="tw-text-2xl tw-text-gray-600 dark:tw-text-gray-300">/mês</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-100">
+                       Para quem trabalha sozinho e quer liberdade.
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-4 tw-text-base tw-text-gray-800 dark:tw-text-gray-200"
+                    >
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>1 Barbeiro</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Site de Agendamento (Sua logo e cores)</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Agenda 24h automática</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Lembretes automáticos (E-mail)</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2 ">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Suporte por Chat</span>    
+                        </li>
+                  
+                    </ul>
+                    <a
+                        href="#"
+                        class="btn tw-mt-auto !tw-w-full tw-transition-transform tw-duration-[0.3s] 
+                                hover:tw-scale-x-[1.02] !tw-text-black !tw-bg-transparent !tw-border-[1px]
+                                 tw-border-black dark:tw-border-white dark:!tw-text-white"
+                    >
+                        Barbeiro Solo
+                    </a>
+                </div>
+                
+                <div
+                    class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2
+                            tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#595858] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-5xl max-md:tw-text-3xl  tw-font-semibold">R$ 50</span>
+                        <span class="tw-text-2xl max-md:tw-text-xl  tw-text-gray-600 dark:tw-text-gray-300">/mês</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-200">
+                        Para quem tem equipe e quer ver o lucro.
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-4  tw-text-base tw-text-gray-800 dark:tw-text-gray-100"
+                    >
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Até 4 Barbeiros</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Painel Financeiro Completo (Lucro/Despesa)</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Cálculo Automático de Comissões</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Ranking de Melhores Clientes</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2 ">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Bloqueio de Horários Avançado</span>    
+                        </li>
+                  
+                    </ul>
+                    <a
+                        href="#"
+                        class="btn tw-mt-auto !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Profissional em vendas
+                    </a>
+                </div>
+
+                <div
+                    class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px]
+                            tw-border-outlineColor dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-bg-white tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-5xl max-md:tw-text-3xl tw-font-semibold">R$ 89</span>
+                        <span class="tw-text-2xl tw-text-gray-600 dark:tw-text-gray-300">/mês</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-100">
+                        Para barbearias de alto nível e redes.
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-4 tw-text-base 
+                                tw-text-gray-800 dark:tw-text-gray-200"
+                    >
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Barbeiros ILIMITADOS</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Relatórios de Performance Avançados</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Suporte VIP (WhatsApp do Fundador)</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2 ">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Consultoria de Configuração Inicial</span>    
+                        </li>
+                        <li class="tw-flex tw-gap-2 ">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Prioridade em novas funções (você mesmo pode solicitar novas funções)</span>    
+                        </li>
+                  
+                    </ul>
+                    <a
+                        href="#"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] 
+                                hover:tw-scale-x-[1.02] !tw-text-black !tw-bg-transparent 
+                                !tw-border-[1px] tw-border-black dark:tw-border-white dark:!tw-text-white"
+                    >
+                        Elite
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
+        >   
+
+
+            <h3
+                class="tw-text-4xl tw-font-medium max-md:tw-text-2xl"
+            >
+                Faq
+            </h3>
+            <div
+                class="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4"
+            >
+                <div
+                    class="faq tw-w-full"
+                >
+                    <h4
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Meu cliente precisa baixar algum aplicativo para agendar?</span>
+                        <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform 
+                                    tw-ml-auto tw-font-semibold"></i>
+                    </h4>
+                    <div class="content max-lg:tw-text-sm">
+                        Não! E isso é uma grande vantagem. Apps exigem que o cliente baixe, crie conta e lembre a senha (o que faz muitos desistirem). O seu site abre direto no navegador do celular dele através de um link simples. É clicar e agendar.
+                    </div>
+                </div>
+                <hr>
+                <div
+                    class="faq tw-w-full"
+                >
+                    <h4
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Vocês cobram comissão sobre os meus cortes?</span>
+                        <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform 
+                                    tw-ml-auto tw-font-semibold"></i>
+                    </h4>
+                    <div class="content max-lg:tw-text-sm">
+                        Jamais. O faturamento é 100% seu. Nós não somos sócios do seu negócio. Você paga apenas a mensalidade fixa do plano escolhido e nada mais.
+                    </div>
+                </div>
+                <hr>
+                <div
+                    class="faq tw-w-full"
+                >
+                    <h4
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Existe contrato de fidelidade ou multa de cancelamento?</span>
+                        <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform 
+                                    tw-ml-auto tw-font-semibold"></i>
+                    </h4>
+                    <div class="content max-lg:tw-text-sm">
+                        Não. Acreditamos tanto no nosso produto que não precisamos prender ninguém. Você pode cancelar sua assinatura a qualquer momento, sem multas e sem letras miúdas.
+                    </div>
+                </div>
+                <hr>
+
+                <div
+                    class="faq tw-w-full"
+                >
+                    <h4
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Tenho mais de uma unidade (Filial). Preciso de duas contas?</span>
+                        <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform 
+                                    tw-ml-auto tw-font-semibold"></i>
+                    </h4>
+                    <div class="content max-lg:tw-text-sm">
+                        Não. No plano Elite, você gerencia múltiplas unidades com um único login de "Super Admin". Você troca de unidade com um clique e vê o relatório separado ou somado de todas as lojas.
+                    </div>
+                </div>
+                <hr>
+                
+            </div>
+            <div class="purple-bg-grad max-md:tw-hidden reveal-up tw-absolute tw-bottom-14 tw-right-[20%] 
+                                 tw-h-[150px] tw-w-[150px] tw-rounded-full"
+                ></div>
+           
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[5%] tw-p-[5%] tw-px-[10%]"
+        >   
+            <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal">
+                Fale com gente de verdade. Nada de robôs. Estamos online para te ajudar agora.
+            </h3>
+            <a href="https://wa.me/5562994584529?text=Ol%C3%A1,%20Vim%20pelo%20site,%20gostaria%20de%20tirar%20duvidas%20sobre%20os%20planos." class="btn  reveal-up !tw-rounded-full !tw-p-4 tw-font-medium">
+                Chamar no whatsapp
+            </a>
+        </section>
+
+        
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2"
+        >
+            <div
+                class="tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 
+                        tw-rounded-lg tw-bg-[#F6F7FB] dark:tw-bg-[#171717] tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col"
+            >
+                <div class="tw-flex tw-flex-col max-lg:tw-text-center tw-gap-1">
+                    <h2 class="tw-text-2xl tw-text-gray-800 dark:tw-text-gray-200 max-md:tw-text-xl">
+                        Inscreva-se na Nossa Newsletter
+                    </h2>
+                    <div class="tw-text-gray-700 dark:tw-text-gray-300">Obtenha informações e atualizações sobre o produto.</div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2"
+                >
+                    <input
+                        type="email"
+                        class="input tw-h-full tw-w-full !tw-border-gray-600 tw-p-2 tw-outline-none"
+                        placeholder="email"
+                    />
+                    <a
+                        class="btn !tw-rounded-full !tw-border-[1px] !tw-text-black !tw-border-solid !tw-border-black  dark:!tw-text-white
+                            dark:!tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                        href=""
+                    >
+                        Cadastro
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-px-[10%] 
+                    tw-text-black dark:tw-text-white max-md:tw-flex-col"
+        >
+            <div class="tw-flex max-md:tw-flex-col max-md:tw-gap-6 tw-gap-3 tw-w-full tw-place-content-around">
+                <div
+                    class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+                >   
+                    <a href="#" class="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6">
+                        <img
+                            src="./assets/images/home/logolc.png"
+                            alt="logo"
+                            srcset=""
+                            class="tw-max-w-[120px]"
+                        />
+                        <div class="tw-max-w-[120px] tw-text-center tw-text-3xl tw-h-fit">
+                            LUXCUT
+                        </div>
+                    </a>
+                    <!-- <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div> -->
+                    <div class="tw-flex tw-gap-4 tw-text-lg">
+                        <a href="https://github.com/pkzinx" aria-label="Github">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kaio.pietroxx/" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="http://kaiopietro.info" aria-label="Website">
+                            <i class="bi bi-globe"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="tw-flex max-md:tw-flex-col tw-flex-wrap tw-gap-6 tw-h-full tw-w-full tw-justify-around">
+                    <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                        <h2 class="tw-text-xl">Recursos</h2>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <a href="pages/agendamento.html" class="footer-link">Agendamento automático</a>
+                            <a href="pages/financeiro.html" class="footer-link">Painel financeiro</a>
+                            <a href="pages/bloqueio-horarios.html" class="footer-link">Bloqueio de horários</a>
+                            <a href="pages/servicos.html" class="footer-link">Serviços</a>
+                            <a href="pages/produtos.html" class="footer-link">Adicionar produtos (Em breve)</a>
+                        </div>
+                    </div>
+
+
+                    <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                        <h2 class="tw-text-xl">Software</h2>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <a href="pages/suporte.html" class="footer-link">Canais de suporte</a>
+                            <a href="pages/sistema.html" class="footer-link">Sistema</a>
+                            <a href="pages/sobre.html" class="footer-link">Sobre</a>
+                            <a href="pages/desenvolvedor.html" class="footer-link">Desenvolvedor</a>
+                        </div>
+                    </div>
+
+                    <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                        <h2 class="tw-text-xl">Legal</h2>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <a href="pages/termos.html" class="footer-link">Termos de serviço</a>
+                            <a href="pages/privacidade.html" class="footer-link">Política de privacidade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="tw-mt-8">
+            <div class="tw-mt-2 tw-flex tw-gap-2 tw-flex-col tw-text-gray-700 dark:tw-text-gray-300 tw-place-items-center 
+                    tw-text-[12px] tw-w-full tw-text-center tw-place-content-around">
+                <span>Copyright &#169; 2024-2026</span>
+                <span>Desenvolvido por Kaio Pietro, todos os direitos reservados</span>
+            </div>
+
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./scripts/components.js"></script>
+    <script src="./index.js"></script>
+
+    <!-- By Paul: https://github.com/PaulleDemon -->
+</html>
