@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 40" fill="none">
+  <!-- Vintage Crown & Mustache -->
+  <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="tw-text-white">
+    <!-- Small Crown -->
+    <path d="M12 12 L16 16 L20 10 L24 16 L28 12 L27 18 L13 18 Z" fill="currentColor" fill-opacity="0.2"/>
+    <!-- Mustache -->
+    <path d="M12 25 C15 22 18 24 20 27 C22 24 25 22 28 25 C26 29 22 29 20 28 C18 29 14 29 12 25 Z" fill="currentColor"/>
+  </g>
+  <text x="42" y="21" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="1.5">DOM CORLEONE</text>
+  <text x="42" y="32" fill="#9CA3AF" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="600" letter-spacing="2">BARBEARIA CLÁSSICA</text>
+</svg>

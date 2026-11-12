@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" fill="none">
+  <!-- Viking Horns & Comb -->
+  <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="tw-text-white">
+    <path d="M10 16 C10 10 14 8 16 11 L16 18 Z" fill="currentColor" fill-opacity="0.3"/>
+    <path d="M26 16 C26 10 22 8 20 11 L20 18 Z" fill="currentColor" fill-opacity="0.3"/>
+    <path d="M14 18 H22 V27 C22 29 14 29 14 27 Z" fill="none"/>
+    <line x1="16" y1="21" x2="16" y2="25"/>
+    <line x1="20" y1="21" x2="20" y2="25"/>
+  </g>
+  <text x="38" y="21" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="1.5">VIKING BARBER</text>
+  <text x="38" y="32" fill="#9CA3AF" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="600" letter-spacing="2">TRADITIONAL CUTS</text>
+</svg>

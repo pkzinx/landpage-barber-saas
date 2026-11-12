@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 40" fill="none">
+  <!-- Beard Silhouette & Scissors -->
+  <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="tw-text-white">
+    <path d="M12 14 C12 24 16 30 20 32 C24 30 28 24 28 14 C25 15 23 18 20 18 C17 18 15 15 12 14 Z" fill="currentColor" fill-opacity="0.25"/>
+    <circle cx="15" cy="11" r="2.5" fill="none"/>
+    <circle cx="25" cy="11" r="2.5" fill="none"/>
+  </g>
+  <text x="40" y="21" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="1.5">BLACK BEARD</text>
+  <text x="40" y="32" fill="#9CA3AF" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="600" letter-spacing="2">GROOMING CLUB</text>
+</svg>

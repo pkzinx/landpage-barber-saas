@@ -81,8 +81,6 @@ function updateToggleModeBtn(){
     // Nao utilizado - Dark mode fixo
 }
 
-}
-
 
 const promptWindow =  new Prompt("#pixa-playground")
 const promptForm = document.querySelector("#prompt-form")
