@@ -279,3 +279,25 @@ sections.forEach((sec) => {
 
 
 })
+
+// ------------- Mobile Pricing Toggle: Mensal vs Vitalício -------------
+const btnPricingMensal = document.getElementById('btn-pricing-mensal')
+const btnPricingVitalicio = document.getElementById('btn-pricing-vitalicio')
+const cardMensal = document.getElementById('pricing-card-mensal')
+const cardVitalicio = document.getElementById('pricing-card-vitalicio')
+
+if (btnPricingMensal && btnPricingVitalicio && cardMensal && cardVitalicio) {
+    btnPricingMensal.addEventListener('click', () => {
+        cardMensal.classList.remove('max-lg:tw-hidden')
+        cardVitalicio.classList.add('max-lg:tw-hidden')
+        btnPricingMensal.className = 'tw-flex-1 sm:tw-flex-none tw-px-5 tw-py-2 tw-text-xs tw-font-semibold tw-rounded-lg tw-transition-all tw-bg-white tw-text-black tw-shadow-sm cursor-pointer tw-text-center'
+        btnPricingVitalicio.className = 'tw-flex-1 sm:tw-flex-none tw-px-5 tw-py-2 tw-text-xs tw-font-semibold tw-rounded-lg tw-transition-all tw-text-gray-400 hover:tw-text-white cursor-pointer tw-text-center'
+    })
+
+    btnPricingVitalicio.addEventListener('click', () => {
+        cardMensal.classList.add('max-lg:tw-hidden')
+        cardVitalicio.classList.remove('max-lg:tw-hidden')
+        btnPricingVitalicio.className = 'tw-flex-1 sm:tw-flex-none tw-px-5 tw-py-2 tw-text-xs tw-font-semibold tw-rounded-lg tw-transition-all tw-bg-white tw-text-black tw-shadow-sm cursor-pointer tw-text-center'
+        btnPricingMensal.className = 'tw-flex-1 sm:tw-flex-none tw-px-5 tw-py-2 tw-text-xs tw-font-semibold tw-rounded-lg tw-transition-all tw-text-gray-400 hover:tw-text-white cursor-pointer tw-text-center'
+    })
+}

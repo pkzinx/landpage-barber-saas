@@ -31,67 +31,6 @@
             referrerpolicy="no-referrer"
         />
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-');
-        </script>
-
-    
-<style>
-.dlux-nav-dropdown-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 7px 10px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.15s ease;
-}
-.dlux-nav-dropdown-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-}
-.dlux-nav-dropdown-item .badge {
-    font-family: monospace;
-    font-size: 10px;
-    font-weight: 700;
-    color: #a1a1aa;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2px 6px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    flex-shrink: 0;
-}
-.dlux-nav-dropdown-item:hover .badge {
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.12);
-}
-.dlux-nav-dropdown-item .info {
-    display: flex;
-    flex-direction: column;
-}
-.dlux-nav-dropdown-item .title {
-    font-size: 12px;
-    font-weight: 600;
-    color: #e2e8f0;
-    line-height: 1.2;
-}
-.dlux-nav-dropdown-item:hover .title {
-    color: #ffffff;
-}
-.dlux-nav-dropdown-item .sub {
-    font-size: 10px;
-    color: #71717a;
-    line-height: 1.2;
-    margin-top: 2px;
-}
-</style>
-
 </head>
     <body
         class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] 
@@ -131,87 +70,23 @@
                 >
                     <a class="header-links" href="#hero-section" onclick="event.preventDefault(); document.querySelector('#hero-section').scrollIntoView({behavior:'smooth'})"> Sobre </a>
                     <a class="header-links" href="#gestao" onclick="event.preventDefault(); document.querySelector('#gestao').scrollIntoView({behavior:'smooth'})"> Gestão </a>
-                    <a class="header-links" href="#solucao" onclick="event.preventDefault(); document.querySelector('#solucao').scrollIntoView({behavior:'smooth'})"> Solução </a>
+                    <a class="header-links" href="#features" onclick="event.preventDefault(); document.querySelector('#features').scrollIntoView({behavior:'smooth'})"> Solução </a>
                     <a class="header-links" href="#pricing" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})"> Preços </a>
                    
-                    <div class="tw-relative tw-group">
-                        <a class="header-links tw-inline-flex tw-items-center tw-gap-1.5 tw-cursor-pointer" href="/recursos/">
-                            <span>Recursos</span>
-                            <svg class="tw-w-3.5 tw-h-3.5 tw-transition-transform tw-duration-200 group-hover:tw-rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </a>
-                        <div class="tw-hidden group-hover:tw-block hover:tw-block tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-full tw-pt-2 tw-z-50 tw-w-[360px]">
-                            <div style="background: rgba(13, 13, 15, 0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 14px; box-shadow: 0 20px 45px rgba(0,0,0,0.9); padding: 8px; display: flex; flex-direction: column; gap: 3px;">
-                                <div style="padding: 8px 12px 6px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between;">
-                                    <span style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #a1a1aa;">Recursos &amp; Especificações</span>
-                                    <span style="font-size: 9px; padding: 2px 6px; background: rgba(255,255,255,0.06); border-radius: 4px; color: #e2e8f0; font-family: monospace;">v2.0</span>
-                                </div>
-                                <a href="/recursos/#cat-01" class="dlux-nav-dropdown-item">
-                                    <span class="badge">01</span>
-                                    <div class="info"><span class="title">Agendamento &amp; Vitrine 24h</span><span class="sub">Link na bio, sem senhas, buffer inteligente</span></div>
-                                </a>
-                                <a href="/recursos/#cat-02" class="dlux-nav-dropdown-item">
-                                    <span class="badge">02</span>
-                                    <div class="info"><span class="title">Controle de Agenda &amp; Pausas</span><span class="sub">Bloqueios rápidos, almoço e folgas</span></div>
-                                </a>
-                                <a href="/recursos/#cat-03" class="dlux-nav-dropdown-item">
-                                    <span class="badge">03</span>
-                                    <div class="info"><span class="title">Gestão de Serviços &amp; Preços</span><span class="sub">Catálogo dinâmico, combos e durações</span></div>
-                                </a>
-                                <a href="/recursos/#cat-04" class="dlux-nav-dropdown-item">
-                                    <span class="badge">04</span>
-                                    <div class="info"><span class="title">WhatsApp &amp; Anti-Ban</span><span class="sub">Lembretes humanizados, confirmação 1-clique</span></div>
-                                </a>
-                                <a href="/recursos/#cat-05" class="dlux-nav-dropdown-item">
-                                    <span class="badge">05</span>
-                                    <div class="info"><span class="title">Finanças &amp; Comissões</span><span class="sub">DRE diário, repasse de barbeiros e split</span></div>
-                                </a>
-                                <a href="/recursos/#cat-06" class="dlux-nav-dropdown-item">
-                                    <span class="badge">06</span>
-                                    <div class="info"><span class="title">Equipe Multi-Barbeiros</span><span class="sub">Acessos individuais, limites e comissões</span></div>
-                                </a>
-                                <a href="/recursos/#cat-07" class="dlux-nav-dropdown-item">
-                                    <span class="badge">07</span>
-                                    <div class="info"><span class="title">Visual Studio Builder</span><span class="sub">Editor ao vivo da vitrine e personalização</span></div>
-                                </a>
-                                <a href="/recursos/#cat-08" class="dlux-nav-dropdown-item">
-                                    <span class="badge">08</span>
-                                    <div class="info"><span class="title">Base de Clientes (CRM)</span><span class="sub">Histórico de cortes, LTV e radar de retorno</span></div>
-                                </a>
-                                <a href="/recursos/#cat-09" class="dlux-nav-dropdown-item">
-                                    <span class="badge">09</span>
-                                    <div class="info"><span class="title">Suporte &amp; Segurança</span><span class="sub">Backups diários, LGPD e alta disponibilidade</span></div>
-                                </a>
-                                <a href="/recursos/" style="margin-top: 4px; padding: 10px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #ffffff; font-size: 11px; font-weight: 700; transition: all 0.15s ease;">
-                                    <span>Ver todas as especificações completas</span>
-                                    <span style="color: #a1a1aa;">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </nav>
+                    <a class="header-links" href="/recursos/"> Recursos </a>
+                    </nav>
                 <div
                     class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[16px] tw-text-base max-md:tw-w-full 
                             max-md:tw-flex-col max-md:tw-place-content-center"
                 >
                     <a
                         href="/login"
-                        class="tw-inline-flex tw-items-center tw-gap-1.5 tw-text-sm tw-font-semibold tw-text-gray-200 hover:tw-text-white tw-transition-colors"
-                        title="Acessar o Painel de Gestão"
-                    >
-                        <span>Acessar Painel</span>
-                        <i class="bi bi-box-arrow-in-right"></i>
-                    </a>
-                    <a
-                        href="#pricing"
-                        aria-label="Ver Planos" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})"
-                        class="btn tw-flex tw-gap-2 tw-px-4 tw-py-2 tw-transition-transform 
+                        aria-label="Entrar no Painel"
+                        class="btn tw-flex tw-items-center tw-gap-2 tw-px-5 tw-py-2 tw-transition-transform 
                                     tw-duration-[0.3s] hover:tw-translate-x-1"
                     >
-                        <span>Planos</span>
-                        <i class="bi bi-arrow-right"></i>
+                        <span>Entrar</span>
+                        <i class="bi bi-box-arrow-in-right"></i>
                     </a>
                 </div>
             </div>
@@ -276,10 +151,15 @@
                     </div>
 
                     <div
-                        class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4"
+                        class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-place-items-center tw-gap-4"
                     >
-                        <a href="#pricing" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})" class="btn tw-group tw-shadow-lg !tw-rounded-xl !tw-py-4 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03] tw-mx-auto">
-                            <span>ver planos</span>
+                        <a href="#pricing" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})" class="btn tw-group tw-shadow-lg !tw-rounded-xl !tw-py-3.5 !tw-px-7 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03] tw-flex tw-items-center tw-gap-2">
+                            <span>Ver Planos</span>
+                            <i class="bi bi-arrow-down-short"></i>
+                        </a>
+                        <a href="/login" class="tw-inline-flex tw-items-center tw-gap-2 tw-px-7 tw-py-3.5 tw-rounded-xl tw-font-semibold tw-text-sm tw-text-white tw-border tw-border-white/20 hover:tw-border-white/50 tw-bg-white/5 hover:tw-bg-white/10 tw-backdrop-blur-md tw-transition-all tw-duration-200 hover:tw-scale-[1.02]">
+                            <span>Acessar Painel</span>
+                            <i class="bi bi-box-arrow-in-right"></i>
                         </a>
                     </div>
                 </div>
@@ -292,19 +172,13 @@
                     <div class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[5%] tw-h-[200px] tw-w-[200px]"
                     ></div>    
 
-                    <div
-                        class="tw-relative tw-max-w-[80%] tw-bg-white dark:tw-bg-black tw-border-[1px] dark:tw-border-[#36393c] lg:tw-w-[1024px]
-                                lg:tw-h-[650px]  tw-flex tw-shadow-xl max-lg:tw-h-[450px] max-lg:tw-w-full
-                                tw-overflow-hidden
-                                tw-min-w-[320px] md:tw-w-full tw-min-h-[450px] tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
-                        id="dashboard"
-                    >  
+                    <div class="tw-relative tw-w-full tw-max-w-[1080px] tw-h-auto tw-flex tw-shadow-2xl tw-overflow-hidden tw-rounded-xl tw-border-[1px] dark:tw-border-[#36393c] tw-bg-transparent tw-mx-auto" id="dashboard">  
 
                         <div class="purple-bg-grad tw-max-w-[80%] reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[0%] lg:tw-max-w-[1000px] tw-h-full tw-w-full"
                         ></div> 
-                        <div class="animated-border tw-w-full tw-h-full tw-p-[2px]">
-                            <div class="tw-w-full tw-h-full tw-rounded-xl tw-overflow-hidden tw-flex">
-                                <img src="./assets/images/home/hero.png" alt="Hero" class="reveal-up tw-w-full tw-h-full tw-object-cover">
+                        <div class="animated-border tw-w-full tw-h-auto tw-p-[2px]">
+                            <div class="tw-w-full tw-h-auto tw-rounded-xl tw-overflow-hidden tw-flex tw-items-center tw-justify-center">
+                                <img src="./assets/images/home/hero.png" alt="DluxOS Dashboard" class="reveal-up tw-w-full tw-h-auto tw-object-contain tw-block" style="max-width: 100%; height: auto; display: block;">
                                 <!-- sign-up pop-up -->
                                 <div class="tw-hidden tw-absolute tw-rounded-xl tw-text-center tw-transition-transform tw-duration-300 tw-scale-0 tw-backdrop-blur-lg tw-flex tw-flex-col tw-p-10 tw-place-items-center 
                                         tw-gap-4 tw-w-full tw-h-full dark:tw-bg-[#000000b4] tw-bg-[#ffffff6a] firefox:tw-bg-white tw-top-0 tw-left-0 tw-z-20"
@@ -605,31 +479,6 @@
                             class="tw-h-full tw-w-full tw-object-contain tw-opacity-80 hover:tw-opacity-100 tw-transition-opacity"
                         />
                     </div>
-                </div>
-            </div>
-        </section>
-
-            
-        <section
-            class="tw-relative tw-flex  tw-w-full tw-min-h-[100vh] max-lg:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
-        >   
-             <div class="tw-w-full  tw-place-content-center tw-items-center 
-                        tw-flex tw-flex-col tw-max-w-[900px] tw-gap-4 tw-p-4">
-               <div class="purple-bg-grad  reveal-up tw-absolute tw-right-[20%] tw-top-[20%] tw-h-[200px] tw-w-[200px]"
-                ></div>
-                <h2 class="reveal-up tw-text-6xl max-lg:tw-text-4xl tw-text-center tw-leading-normal tw-uppercase">
-                    
-                    <span class="tw-font-semibold">Seu link na bio, sua agenda cheia. Clientes agendam a qualquer hora pelo seu próprio link, sem apps ou burocracia.</span>
-                </h2>
-                <p class="reveal-up tw-mt-8 tw-max-w-[650px] tw-text-gray-900 dark:tw-text-gray-200 tw-text-center max-md:tw-text-sm">   
-                    Entregamos sua barbearia online pronta. Seu cliente acessa, agende em segundos e você só se preocupa em fazer o corte perfeito.
-                </p>
-                <div class="reveal-up tw-flex tw-mt-8">
-                    <a href="#features" 
-                        class="tw-shadow-md hover:tw-shadow-xl dark:tw-shadow-gray-800 tw-transition-all tw-duration-300 
-                                        tw-border-[1px] tw-p-3 tw-px-4 tw-border-black dark:tw-border-white tw-rounded-md">
-                        Ver Funcionalidades
-                    </a>
                 </div>
             </div>
         </section>
@@ -1108,15 +957,15 @@
                                     hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card tw-overflow-hidden"
                         >
                             <div class="tw-text-5xl max-md:tw-text-3xl tw-text-white">
-                                <i class="bi bi-people"></i>
+                                <i class="bi bi-whatsapp"></i>
                             </div>
 
                             <div class="tw-flex tw-flex-col tw-gap-4">
                                 <h3 class="tw-text-2xl max-md:tw-text-xl">
-                                    Sua barbearia com cara de franquia.
+                                    Disparos e Notificações no WhatsApp.
                                 </h3>
                                 <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
-                                    Por que as grandes redes crescem tanto? Porque elas têm processos. Tenha a mesma tecnologia das maiores barbearias do Brasil e mostre para o seu cliente que você joga na série A.
+                                    Lembretes e confirmações automáticas com fila inteligente anti-ban para zerar faltas, além de disparos direcionados para recuperar clientes sumidos que não cortam há dias.
                                 </p>
 
                                 
@@ -1130,528 +979,251 @@
             </div>
         </section>
 
-
         <section
-            class="tw-relative tw-flex  tw-w-full tw-min-h-[110vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
-            id="solucao"
-        >   
-             <div class="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-items-center 
-                        tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
-               
-                <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal">
-                    A ferramenta completa
-                </h3>
-                <!-- <p class="reveal-up tw-mt-3 tw-max-w-[600px] tw-text-center ">
-                </p> -->
-                
-                <div class="tw-mt-8 tw-relative tw-gap-10 tw-p-4 tw-grid tw-place-items-center tw-grid-cols-3 max-lg:tw-flex max-lg:tw-flex-col">
-
-
-                    <div class="reveal-up tw-w-[350px] tw-border-[1px] tw-rounded-md tw-place-items-center tw-p-3
-                                 tw-bg-[#141414] tw-border-[#1f2123] max-md:tw-w-[320px] tw-flex tw-flex-col tw-gap-1">
-
-                        <div class="tw-w-full tw-h-[140px]
-                                    tw-p-1
-                                    tw-rounded-xl 
-                                     tw-backdrop-blur-2xl
-                                     tw-overflow-hidden tw-flex tw-place-content-center">
-                            <i class="bi bi-calendar-x tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
-                        </div>
-                        <h3 class="tw-text-2xl tw-text-white">
-                            Imprevistos Controlados
-                        </h3>
-                        <p class="tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
-                            Bloqueie horários específicos ou o dia todo de um único barbeiro com um clique, sem afetar a agenda do resto da equipe.
-                        </p>
-                    </div>
-                    
-                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-rounded-md tw-place-items-center tw-p-3
-                                 tw-bg-[#141414] tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
-
-                        <div class="tw-w-full tw-h-[140px]
-                                    tw-p-1
-                                    tw-rounded-xl 
-                                     tw-backdrop-blur-2xl
-                                     tw-overflow-hidden tw-flex tw-place-content-center">
-                            <i class="bi bi-bar-chart-line tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
-                        </div>
-                        <h3 class="tw-text-2xl tw-text-white">
-                            Adeus, Achismo
-                        </h3>
-                        <p class="tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
-                            Gráficos precisos de faturamento diário, semanal e mensal. Saiba exatamente quanto dinheiro entrou e para onde ele foi.
-                        </p>
-                    </div>
-
-                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-rounded-lg tw-place-items-center tw-p-3
-                                 tw-bg-[#141414] tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
-
-                        <div class="tw-w-full tw-h-[140px]
-                                    tw-p-1
-                                    tw-rounded-xl 
-                                     tw-backdrop-blur-2xl
-                                     tw-overflow-hidden tw-flex tw-place-content-center tw-items-center">
-                            <i class="bi bi-whatsapp tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
-                        </div>
-                        <h3 class="tw-text-2xl tw-text-center tw-text-white">
-                            WhatsApp no Piloto Automático
-                        </h3>
-                        <p class="tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
-                            Conecte o número da sua barbearia via QR Code. Envie confirmações na hora, lembretes que cortam faltas em 80% e recupere clientes sumidos no automático.
-                        </p>
-                    </div>
-
-                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-rounded-lg tw-place-items-center tw-p-3
-                                 tw-bg-[#141414] tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
-
-                        <div class="tw-w-full tw-h-[140px]
-                                    tw-p-1
-                                    tw-rounded-xl 
-                                     tw-backdrop-blur-2xl
-                                     tw-overflow-hidden tw-flex tw-place-content-center">
-                            <i class="bi bi-award tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
-                        </div>
-                        <h3 class="tw-text-2xl tw-text-white">
-                            Comissões Automáticas
-                        </h3>
-                        <p class="tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
-                            Configure a porcentagem de cada barbeiro e o sistema calcula o repasse automaticamente a cada corte finalizado.
-                        </p>
-                    </div>
-
-                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-lg tw-place-items-center tw-p-4
-                                 tw-bg-[#141414] tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
-
-                        <div class="tw-w-full tw-h-[180px]
-                                    tw-p-2
-                                    tw-rounded-xl 
-                                     tw-backdrop-blur-2xl
-                                     tw-overflow-hidden tw-flex tw-place-content-center">
-                            <i class="bi bi-shield-lock tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
-                        </div>
-                        <h3 class="tw-text-2xl tw-text-white">
-                            Hierarquia de Acesso
-                        </h3>
-                        <p class="tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
-                            Defina o que cada um vê. O barbeiro acessa a agenda dele; você acessa o financeiro global. Seus dados protegidos.
-                        </p>
-                    </div>
-
-                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-rounded-lg tw-place-items-center tw-p-3
-                                 tw-bg-[#141414] tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-1">
-
-                        <div class="tw-w-full tw-h-[140px]
-                                    tw-p-1
-                                    tw-rounded-xl 
-                                     tw-backdrop-blur-2xl
-                                     tw-overflow-hidden tw-flex tw-place-content-center">
-                            <i class="bi bi-people-fill tw-text-white tw-text-6xl max-md:tw-text-4xl"></i>
-                        </div>
-                        <h3 class="tw-text-2xl tw-text-white">
-                            Performance da Equipe
-                        </h3>
-                        <p class="tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
-                            Métricas individuais de produtividade. Saiba quem são os talentos que estão carregando o faturamento da barbearia.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section
-            class="tw-relative tw-flex  tw-w-full tw-min-h-[100vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
-        >   
-            <div class="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-place-items-center 
-                        tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
-               
-                <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal">
-                    Tudo num só lugar
-                </h3>
-                <p class="reveal-up tw-mt-3 tw-max-w-[800px] tw-text-center ">
-                    Não entregamos apenas uma agenda. Entregamos um ecossistema completo que conecta a experiência do seu cliente com a gestão do seu negócio.
-                </p>
-                
-                <div class="tw-mt-8 tw-relative tw-grid tw-grid-cols-2 max-lg:tw-grid-cols-1 tw-gap-6 tw-w-full tw-max-w-[1240px]">
-
-                    <!-- Card Esquerdo: Experiência do Cliente (Site) -->
-                    <div class="reveal-up tw-flex tw-w-full tw-flex-col tw-rounded-2xl tw-border tw-border-white/10 tw-bg-[#090a0f] tw-p-4 md:tw-p-5 tw-shadow-2xl">
-                        <!-- Topo Navegador com macOS dots e URL -->
-                        <div class="tw-w-full tw-h-9 tw-rounded-xl tw-bg-white/[0.04] tw-border tw-border-white/10 tw-px-3.5 tw-flex tw-items-center tw-justify-between tw-mb-3 select-none">
-                            <div class="tw-flex tw-items-center tw-gap-1.5">
-                                <span class="tw-w-2.5 tw-h-2.5 tw-rounded-full tw-bg-[#ff5f56]"></span>
-                                <span class="tw-w-2.5 tw-h-2.5 tw-rounded-full tw-bg-[#ffbd2e]"></span>
-                                <span class="tw-w-2.5 tw-h-2.5 tw-rounded-full tw-bg-[#27c93f]"></span>
-                            </div>
-                            <div class="tw-flex tw-items-center tw-gap-1.5 tw-px-3 tw-py-1 tw-rounded-md tw-bg-black/40 tw-border tw-border-white/10 tw-text-[11px] tw-text-gray-300">
-                                <i class="bi bi-lock-fill tw-text-emerald-400 tw-text-[10px]"></i>
-                                <span class="tw-font-mono tw-text-emerald-300/90">barbeariaviking.dluxos.store</span>
-                            </div>
-                            <span class="tw-hidden sm:tw-inline-flex tw-items-center tw-gap-1 tw-text-[10px] tw-font-semibold tw-text-[#1affea] tw-bg-[#1affea]/10 tw-px-2 tw-py-0.5 tw-rounded-full tw-border tw-border-[#1affea]/20">
-                                ⚡ Sem baixar app
-                            </span>
-                        </div>
-
-                        <!-- Mini Vitrine do Site da Barbearia -->
-                        <div class="tw-w-full tw-min-h-[290px] tw-rounded-xl tw-bg-gradient-to-b tw-from-[#0d0f17] tw-to-[#07080c] tw-border tw-border-white/10 tw-p-3.5 md:tw-p-4 tw-flex tw-flex-col tw-justify-between select-none">
-                            <!-- Mini Header -->
-                            <div class="tw-flex tw-items-center tw-justify-between tw-pb-2.5 tw-border-b tw-border-white/10">
-                                <div class="tw-flex tw-items-center tw-gap-2">
-                                    <span class="tw-text-base">⚔️</span>
-                                    <span class="tw-text-xs tw-font-extrabold tw-tracking-wider tw-text-white">VIKING BARBER</span>
-                                </div>
-                                <div class="tw-hidden md:tw-flex tw-items-center tw-gap-3 tw-text-[10px] tw-text-gray-400">
-                                    <span class="tw-text-white tw-font-medium">Início</span>
-                                    <span>Serviços</span>
-                                    <span>Profissionais</span>
-                                    <span>Avaliações</span>
-                                </div>
-                                <span class="tw-px-2.5 tw-py-1 tw-rounded-md tw-bg-gradient-to-r tw-from-[#1affea] tw-to-[#d4af37] tw-text-black tw-text-[10px] tw-font-bold tw-shadow-[0_0_12px_rgba(26,255,234,0.3)]">
-                                    Agendar Agora
-                                </span>
-                            </div>
-
-                            <!-- Mini Hero -->
-                            <div class="tw-py-3 tw-text-center">
-                                <span class="tw-text-[10px] tw-uppercase tw-tracking-widest tw-text-[#1affea] tw-font-bold tw-block tw-mb-1">
-                                    Agenda Online 24h
-                                </span>
-                                <h4 class="tw-text-sm md:tw-text-base tw-font-black tw-text-white tw-tracking-tight">
-                                    ESTILO & PRECISÃO EM CADA CORTE
-                                </h4>
-                                <p class="tw-text-[11px] tw-text-gray-400 tw-mt-1">
-                                    Escolha seu serviço e barbeiro favorito em menos de 15 segundos.
-                                </p>
-                            </div>
-
-                            <!-- 3 Mini-Cards de Serviços -->
-                            <div class="tw-grid tw-grid-cols-3 tw-gap-2 tw-pt-1">
-                                <!-- Serviço 1 -->
-                                <div class="tw-p-2 tw-rounded-lg tw-bg-white/[0.04] tw-border tw-border-white/10 tw-flex tw-flex-col tw-justify-between">
-                                    <div>
-                                        <div class="tw-text-[10px] tw-font-bold tw-text-white tw-truncate">Degradê Navalhado</div>
-                                        <div class="tw-text-[9px] tw-text-gray-400">30 min</div>
-                                    </div>
-                                    <div class="tw-flex tw-items-center tw-justify-between tw-mt-2">
-                                        <span class="tw-text-xs tw-font-black tw-text-emerald-400">R$ 45</span>
-                                        <span class="tw-px-1.5 tw-py-0.5 tw-rounded tw-bg-[#1affea]/15 tw-text-[#1affea] tw-text-[9px] tw-font-bold">✓</span>
-                                    </div>
-                                </div>
-
-                                <!-- Serviço 2 -->
-                                <div class="tw-p-2 tw-rounded-lg tw-bg-white/[0.04] tw-border tw-border-white/10 tw-flex tw-flex-col tw-justify-between">
-                                    <div>
-                                        <div class="tw-text-[10px] tw-font-bold tw-text-white tw-truncate">Barba Terapia</div>
-                                        <div class="tw-text-[9px] tw-text-gray-400">25 min</div>
-                                    </div>
-                                    <div class="tw-flex tw-items-center tw-justify-between tw-mt-2">
-                                        <span class="tw-text-xs tw-font-black tw-text-emerald-400">R$ 35</span>
-                                        <span class="tw-px-1.5 tw-py-0.5 tw-rounded tw-bg-[#1affea]/15 tw-text-[#1affea] tw-text-[9px] tw-font-bold">✓</span>
-                                    </div>
-                                </div>
-
-                                <!-- Serviço 3 (VIP) -->
-                                <div class="tw-p-2 tw-rounded-lg tw-bg-[#d4af37]/10 tw-border tw-border-[#d4af37]/30 tw-flex tw-flex-col tw-justify-between">
-                                    <div>
-                                        <div class="tw-text-[10px] tw-font-bold tw-text-white tw-truncate">Combo VIP Lux</div>
-                                        <div class="tw-text-[9px] tw-text-[#d4af37]">Corte + Barba</div>
-                                    </div>
-                                    <div class="tw-flex tw-items-center tw-justify-between tw-mt-2">
-                                        <span class="tw-text-xs tw-font-black tw-text-[#d4af37]">R$ 70</span>
-                                        <span class="tw-px-1.5 tw-py-0.5 tw-rounded tw-bg-[#d4af37] tw-text-black tw-text-[9px] tw-font-bold">★</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Legenda do Mockup Esquerdo -->
-                        <div class="tw-mt-3 tw-text-center tw-text-gray-300 tw-text-xs tw-leading-relaxed">
-                            <strong class="tw-text-white">Experiência do Cliente (Site):</strong> Design exclusivo com as cores da sua marca que converte visitantes do Instagram em agendamentos em 15 segundos.
-                        </div>
-                    </div>
-
-                    <!-- Card Direito: Gestão do Dono e Barbeiros (Painel) -->
-                    <div class="reveal-up tw-flex tw-w-full tw-flex-col tw-rounded-2xl tw-border tw-border-white/10 tw-bg-[#090a0f] tw-p-4 md:tw-p-5 tw-shadow-2xl">
-                        <!-- Topo com Abas e Badge Admin -->
-                        <div class="tw-w-full tw-h-9 tw-rounded-xl tw-bg-white/[0.04] tw-border tw-border-white/10 tw-px-3.5 tw-flex tw-items-center tw-justify-between tw-mb-3 select-none">
-                            <div class="tw-flex tw-items-center tw-gap-2">
-                                <span class="tw-text-xs tw-font-extrabold tw-text-white tw-tracking-wider">DluxOS</span>
-                                <span class="tw-hidden sm:tw-inline-flex tw-items-center tw-gap-1 tw-text-[10px] tw-font-semibold tw-text-emerald-400 tw-bg-emerald-500/10 tw-px-2 tw-py-0.5 tw-rounded tw-border tw-border-emerald-500/20">
-                                    <span class="tw-w-1.5 tw-h-1.5 tw-rounded-full tw-bg-emerald-400 tw-animate-pulse"></span>
-                                    WhatsApp Ativo
-                                </span>
-                            </div>
-                            <div class="tw-flex tw-items-center tw-gap-2">
-                                <span class="tw-px-2 tw-py-0.5 tw-rounded-md tw-bg-[#d4af37]/20 tw-text-[#d4af37] tw-border tw-border-[#d4af37]/30 tw-text-[10px] tw-font-bold">
-                                    👑 Admin Barbearia
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Mini Painel Liquid Glass -->
-                        <div class="tw-w-full tw-min-h-[290px] tw-rounded-xl tw-bg-gradient-to-b tw-from-[#0d0f17] tw-to-[#07080c] tw-border tw-border-white/10 tw-p-3.5 md:tw-p-4 tw-flex tw-flex-col tw-justify-between select-none">
-                            <!-- 3 KPIs Rápidos no Topo -->
-                            <div class="tw-grid tw-grid-cols-3 tw-gap-2 tw-pb-2.5 tw-border-b tw-border-white/10">
-                                <div class="tw-p-1.5 tw-rounded-lg tw-bg-white/[0.03] tw-border tw-border-white/5">
-                                    <span class="tw-text-[9px] tw-text-gray-400 tw-block">Hoje</span>
-                                    <span class="tw-text-xs tw-font-black tw-text-white">R$ 1.480</span>
-                                </div>
-                                <div class="tw-p-1.5 tw-rounded-lg tw-bg-white/[0.03] tw-border tw-border-white/5">
-                                    <span class="tw-text-[9px] tw-text-gray-400 tw-block">Cortes</span>
-                                    <span class="tw-text-xs tw-font-black tw-text-[#1affea]">24 feitos</span>
-                                </div>
-                                <div class="tw-p-1.5 tw-rounded-lg tw-bg-emerald-500/10 tw-border tw-border-emerald-500/20">
-                                    <span class="tw-text-[9px] tw-text-emerald-400 tw-block">WhatsApp</span>
-                                    <span class="tw-text-xs tw-font-black tw-text-emerald-400">100% ✓</span>
-                                </div>
-                            </div>
-
-                            <!-- Grade de Agenda Ao Vivo com Badges Reais -->
-                            <div class="tw-flex tw-flex-col tw-gap-1.5 tw-py-2">
-                                <!-- Linha 1: Confirmado WhatsApp -->
-                                <div class="tw-flex tw-items-center tw-justify-between tw-p-1.5 tw-rounded-lg tw-bg-white/[0.03] tw-border tw-border-white/5">
-                                    <div class="tw-flex tw-items-center tw-gap-2">
-                                        <span class="tw-text-[11px] tw-font-mono tw-font-bold tw-text-white">14:00</span>
-                                        <span class="tw-text-[11px] tw-text-gray-200">João Silva — <span class="tw-text-gray-400">Corte + Barba</span></span>
-                                    </div>
-                                    <span class="tw-text-[9px] tw-font-semibold tw-px-1.5 tw-py-0.5 tw-rounded tw-bg-[#25d366]/15 tw-text-[#25d366] tw-border tw-border-[#25d366]/30">
-                                        WhatsApp ✓
-                                    </span>
-                                </div>
-
-                                <!-- Linha 2: Concluído -->
-                                <div class="tw-flex tw-items-center tw-justify-between tw-p-1.5 tw-rounded-lg tw-bg-white/[0.03] tw-border tw-border-white/5">
-                                    <div class="tw-flex tw-items-center tw-gap-2">
-                                        <span class="tw-text-[11px] tw-font-mono tw-font-bold tw-text-white">14:40</span>
-                                        <span class="tw-text-[11px] tw-text-gray-200">Pedro M. — <span class="tw-text-gray-400">Degradê</span></span>
-                                    </div>
-                                    <span class="tw-text-[9px] tw-font-semibold tw-px-1.5 tw-py-0.5 tw-rounded tw-bg-emerald-500/15 tw-text-emerald-400 tw-border tw-border-emerald-500/30">
-                                        Pago • R$ 45
-                                    </span>
-                                </div>
-
-                                <!-- Linha 3: Horário Bloqueado -->
-                                <div class="tw-flex tw-items-center tw-justify-between tw-p-1.5 tw-rounded-lg tw-bg-white/[0.02] tw-border tw-border-white/5 tw-opacity-70">
-                                    <div class="tw-flex tw-items-center tw-gap-2">
-                                        <span class="tw-text-[11px] tw-font-mono tw-text-gray-400">15:20</span>
-                                        <span class="tw-text-[11px] tw-text-gray-400">Pausa / Horário Bloqueado</span>
-                                    </div>
-                                    <span class="tw-text-[9px] tw-font-medium tw-px-1.5 tw-py-0.5 tw-rounded tw-bg-white/5 tw-text-gray-400">
-                                        Intervalo
-                                    </span>
-                                </div>
-
-                                <!-- Linha 4: Em Atendimento -->
-                                <div class="tw-flex tw-items-center tw-justify-between tw-p-1.5 tw-rounded-lg tw-bg-[#d4af37]/10 tw-border tw-border-[#d4af37]/30">
-                                    <div class="tw-flex tw-items-center tw-gap-2">
-                                        <span class="tw-text-[11px] tw-font-mono tw-font-bold tw-text-[#d4af37]">16:00</span>
-                                        <span class="tw-text-[11px] tw-text-white">Marcos Costa — <span class="tw-text-gray-300">Barba Terapia</span></span>
-                                    </div>
-                                    <span class="tw-text-[9px] tw-font-bold tw-px-1.5 tw-py-0.5 tw-rounded tw-bg-[#d4af37]/20 tw-text-[#d4af37]">
-                                        Na Cadeira
-                                    </span>
-                                </div>
-                            </div>
-
-                            <!-- Rodapé com Exportação Excel e Fechamento -->
-                            <div class="tw-flex tw-items-center tw-justify-between tw-pt-2 tw-border-t tw-border-white/10 tw-text-[10px]">
-                                <span class="tw-text-gray-400 tw-flex tw-items-center tw-gap-1">
-                                    <i class="bi bi-file-earmark-excel-fill tw-text-emerald-400"></i> Relatório .XLSX pronto
-                                </span>
-                                <span class="tw-text-[#1affea] tw-font-bold">Caixa 100% Batido ✓</span>
-                            </div>
-                        </div>
-
-                        <!-- Legenda do Mockup Direito -->
-                        <div class="tw-mt-3 tw-text-center tw-text-gray-300 tw-text-xs tw-leading-relaxed">
-                            <strong class="tw-text-white">Gestão do Dono e Barbeiros (Painel):</strong> Controle de agenda, comissões automáticas, disparos de WhatsApp, relatórios Excel e fechamento de caixa em um toque.
-                        </div>
-                    </div>
-
-                </div>
-
-                <a href="#pricing" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})" class="reveal-up tw-group tw-shadow-xl btn tw-flex tw-gap-2 tw-mt-6 tw-mx-auto">
-                    <span>Ver planos</span>
-                </a>
-
-            </div>
-        </section>
-
-        <section
-            class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+            class="tw-flex tw-min-h-[85vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-py-16 tw-overflow-hidden"
         >
-            <h3
-                class="reveal-up tw-text-4xl tw-font-medium tw-text-center max-md:tw-text-2xl"
-            >
-                Não acredite apenas na nossa palavra.
-            </h3>
-            <!-- Testimonials -->
-            <div
-                class="tw-mt-20 tw-gap-10 tw-space-y-8  max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
-            >
-                <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
-                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
-                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
-                >   
+            <div class="tw-text-center tw-px-4 tw-mb-8">
+                <h3 class="reveal-up tw-text-4xl tw-font-bold tw-text-center max-md:tw-text-2xl tw-text-white">
+                    Não acredite apenas na nossa palavra.
+                </h3>
+                <p class="reveal-up tw-text-gray-400 tw-text-center tw-mt-2.5 tw-max-w-xl tw-mx-auto max-md:tw-text-sm">
+                    Veja como donos de barbearias em todo o Brasil lotaram suas agendas e profissionalizaram a gestão com o DluxOS.
+                </p>
+            </div>
 
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man2.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
+            <!-- Carrossel Infinito Horizontal de Avaliações -->
+            <div class="reveal-up carousel-testimonials-container tw-mt-4">
+                <div class="carousel-testimonials" style="gap: 16px;">
+
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/man2.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Renan Silva" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Renan Silva</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Barbearia Nobre • SP</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">Renan Silva</div>
-                            <div class="tw-text-gray-700 dark:tw-text-gray-300">Barbearia Nobre</div>
-                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "Trocar apps cheios de concorrentes pelo DluxOS foi a melhor decisão. 95% dos clientes agendam pelo link da bio!"
+                        </p>
                     </div>
-
-                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
-                        Eu usava aqueles apps de agenda onde o cliente vê meus concorrentes na mesma tela. Mudar para um site próprio foi a melhor decisão. Agora, quando o cliente entra, ele vê a MINHA logo e as MINHAS cores. A percepção de valor do meu corte subiu na hora. Hoje, 95% dos meus clientes agendam sozinhos pelo link. O sistema me devolveu a paz para trabalhar focado.
-                    </p>
-                </div>
-
-                 <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
-                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
-                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
-                >   
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/women.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="women"
-                            />
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/women.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Felipe 'Fade'" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Felipe 'Fade'</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Studio 7 Cuts • RJ</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">Felipe 'Fade'</div>
-                            <div class="tw-text-gray-700 dark:tw-text-gray-300">Studio 7 Cuts</div>
-                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "O painel financeiro me salvou: sei o faturamento e as comissões da equipe em dois cliques. Larguei o caderno de vez."
+                        </p>
                     </div>
-
-                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
-                        Sempre fui bom de tesoura e péssimo com números. O painel financeiro me salvou. Com dois cliques eu sei exatamente quanto faturei no dia e qual barbeiro da equipe está rendendo mais. Larguei o caderno de papel definitivamente.
-                    </p>
-                </div>
-
-                 <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
-                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
-                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
-                >   
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/man.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Carlos Eduardo" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Carlos Eduardo</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">The Gentleman • MG</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">Carlos Eduardo</div>
-                            <div class="tw-text-gray-700 dark:tw-text-gray-300">The Gentleman Barber</div>
-                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "Configurei em 10 minutos. O site é muito rápido no celular e os clientes adoraram agendar sem precisar baixar app."
+                        </p>
                     </div>
-
-                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
-                        Tinha medo de ser difícil de mexer, mas configurei tudo em 10 minutos. O site é lindo e muito rápido no celular. Meus clientes, até os mais velhos, elogiaram que ficou muito mais fácil marcar horário.
-                    </p>
-                </div>
-
-                 <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
-                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
-                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
-                >   
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man2.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/man2.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="André Viana" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">André Viana</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Viking Style • PR</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">André Viana</div>
-                            <div class="tw-text-gray-700 dark:tw-text-gray-300">Viking Style</div>
-                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "Os lembretes no WhatsApp zeraram as faltas. A experiência ficou premium e o sistema se pagou logo no primeiro dia."
+                        </p>
                     </div>
-
-                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
-                        Cobrei R$ 10,00 a mais no corte e ninguém reclamou. Por quê? Porque agora o cliente entra num site exclusivo, recebe lembrete, vê minha logo... A experiência ficou premium. O sistema se pagou no primeiro dia só com essa diferença.
-                    </p>
-                </div>
-
-                 <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
-                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
-                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
-                >   
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/women.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="women"
-                            />
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/women.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Gabriel Santos" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Gabriel Santos</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Barbearia Blackout • SC</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">Gabriel</div>
-                            <div class="tw-text-gray-700 dark:tw-text-gray-300">Barbearia Blackout</div>
-                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "O robô com trava anti-ban no WhatsApp é sensacional. Reduziu faltas em 70% com segurança. Agenda sempre cheia."
+                        </p>
                     </div>
-
-                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
-                        Ter um site próprio com a minha identidade fez toda a diferença. Os lembretes automáticos reduziram faltas e o agendamento ficou muito mais profissional.
-                    </p>
-                </div>
-
-                 <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
-                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
-                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
-                >   
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/man.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Lucas Meireles" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Lucas Meireles</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Barber King • DF</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">Jamie</div>
-                            <div class="tw-text-gray-700 dark:tw-text-gray-300">SnapFist.ai, ceo</div>
-                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "Fechamento de caixa sem dor de cabeça. O relatório de comissões por barbeiro sai pronto no final do expediente."
+                        </p>
                     </div>
-
-                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nihil vitae fuga ab reiciendis optio et corporis dolorem alias deserunt, molestias in iusto! Ratione, quisquam incidunt. Reprehenderit ipsam officiis enim.
-                    </p>
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/man2.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Renan Silva" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Renan Silva</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Barbearia Nobre • SP</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "Trocar apps cheios de concorrentes pelo DluxOS foi a melhor decisão. 95% dos clientes agendam pelo link da bio!"
+                        </p>
+                    </div>
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/women.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Felipe 'Fade'" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Felipe 'Fade'</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Studio 7 Cuts • RJ</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "O painel financeiro me salvou: sei o faturamento e as comissões da equipe em dois cliques. Larguei o caderno de vez."
+                        </p>
+                    </div>
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/man.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Carlos Eduardo" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Carlos Eduardo</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">The Gentleman • MG</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "Configurei em 10 minutos. O site é muito rápido no celular e os clientes adoraram agendar sem precisar baixar app."
+                        </p>
+                    </div>
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/man2.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="André Viana" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">André Viana</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Viking Style • PR</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "Os lembretes no WhatsApp zeraram as faltas. A experiência ficou premium e o sistema se pagou logo no primeiro dia."
+                        </p>
+                    </div>
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/women.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Gabriel Santos" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Gabriel Santos</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Barbearia Blackout • SC</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "O robô com trava anti-ban no WhatsApp é sensacional. Reduziu faltas em 70% com segurança. Agenda sempre cheia."
+                        </p>
+                    </div>
+                    <div class="tw-flex tw-w-[360px] max-md:tw-w-[310px] tw-shrink-0 tw-flex-col tw-justify-between tw-rounded-xl tw-border tw-border-[#1f2123] tw-bg-[#080808] tw-py-3 tw-px-4 tw-shadow-md hover:tw-border-white/20 tw-transition-colors" style="white-space: normal !important;">
+                        <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+                            <div class="tw-flex tw-items-center tw-gap-2.5">
+                                <div class="tw-h-8 tw-w-8 tw-rounded-full tw-overflow-hidden tw-border tw-border-white/10 tw-shrink-0">
+                                    <img src="./assets/images/people/man.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Lucas Meireles" />
+                                </div>
+                                <div class="tw-flex tw-flex-col">
+                                    <span class="tw-font-bold tw-text-white tw-text-xs tw-leading-none">Lucas Meireles</span>
+                                    <span class="tw-text-[10px] tw-text-gray-400 tw-mt-0.5">Barber King • DF</span>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-gap-0.5 tw-text-amber-400 tw-text-[10px]">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-[11px] tw-leading-snug" style="white-space: normal !important; margin-bottom: 0;">
+                            "Fechamento de caixa sem dor de cabeça. O relatório de comissões por barbeiro sai pronto no final do expediente."
+                        </p>
+                    </div>
                 </div>
-               
             </div>
         </section>
 
@@ -1668,145 +1240,167 @@
             <p class="reveal-up tw-mt-3 tw-max-w-[800px] tw-text-center tw-text-gray-800 dark:tw-text-gray-200">
                 Menos que o valor de um corte por mês. Escolha o plano ideal para o seu momento.
             </p>
-            <!-- pricing -->
+
+            <!-- Toggle Mobile: Mensal vs Vitalício (Aparece apenas no Mobile/Tablet, Oculto no Desktop) -->
+            <div class="lg:tw-hidden tw-flex tw-justify-center tw-mt-4 tw-mb-2 tw-w-full tw-px-4">
+                <div class="tw-inline-flex tw-items-center tw-bg-white/5 tw-p-1 tw-rounded-xl tw-border tw-border-white/10 select-none tw-w-full sm:tw-w-auto tw-max-w-[340px]">
+                    <button
+                        id="btn-pricing-mensal"
+                        type="button"
+                        class="tw-flex-1 sm:tw-flex-none tw-px-5 tw-py-2 tw-text-xs tw-font-semibold tw-rounded-lg tw-transition-all tw-bg-white tw-text-black tw-shadow-sm cursor-pointer tw-text-center"
+                    >
+                        Mensal
+                    </button>
+                    <button
+                        id="btn-pricing-vitalicio"
+                        type="button"
+                        class="tw-flex-1 sm:tw-flex-none tw-px-5 tw-py-2 tw-text-xs tw-font-semibold tw-rounded-lg tw-transition-all tw-text-gray-400 hover:tw-text-white cursor-pointer tw-text-center"
+                    >
+                        Vitalício
+                    </button>
+                </div>
+            </div>
+
+            <!-- Container dos Cards: Grid 2 colunas no Desktop (lado a lado) / 1 card por vez via Toggle no Mobile -->
             <div
-                class="tw-mt-10 tw-grid tw-grid-cols-2 max-lg:tw-grid-cols-1 tw-gap-8 tw-w-full tw-max-w-[1020px] tw-place-items-center"
+                id="pricing-cards-container"
+                class="tw-mt-4 lg:tw-mt-8 lg:tw-grid lg:tw-grid-cols-2 lg:tw-gap-8 lg:tw-w-full lg:tw-max-w-[1020px] lg:tw-place-items-stretch max-lg:tw-flex max-lg:tw-flex-col max-lg:tw-items-center max-lg:tw-w-full max-lg:tw-px-4"
             >
                 <!-- Card 1: Plano Mensal -->
                 <div
-                    class="reveal-up tw-flex tw-w-full tw-max-w-[480px] tw-flex-col tw-rounded-2xl tw-border tw-border-white/10 tw-bg-[#0c0c0e] tw-p-8 md:tw-p-9 tw-shadow-2xl tw-relative tw-h-full tw-justify-between"
+                    id="pricing-card-mensal"
+                    class="reveal-up lg:tw-flex tw-flex tw-w-full tw-max-w-[480px] max-lg:tw-max-w-[330px] max-sm:tw-max-w-[300px] tw-mx-auto tw-flex-col tw-rounded-2xl tw-border tw-border-white/10 tw-bg-[#0c0c0e] max-sm:tw-p-5 tw-p-8 md:tw-p-9 tw-shadow-2xl tw-relative tw-h-full tw-justify-between"
                 >
                     <div>
                         <div class="tw-inline-flex tw-items-center tw-gap-1.5 tw-px-3 tw-py-1 tw-rounded-full tw-bg-white/5 tw-border tw-border-white/10 tw-text-gray-300 tw-text-xs tw-font-semibold tw-mb-4">
                             Assinatura Flexível
                         </div>
-                        <h3 class="tw-text-3xl tw-font-bold tw-text-white">
+                        <h3 class="tw-text-3xl max-sm:tw-text-2xl tw-font-bold tw-text-white">
                             Plano Mensal
                         </h3>
-                        <p class="tw-mt-2 tw-text-gray-400 tw-text-sm tw-leading-relaxed">
+                        <p class="tw-mt-2 tw-text-gray-400 tw-text-sm max-sm:tw-text-xs tw-leading-relaxed">
                             Ideal para começar hoje mesmo sem comprometer o caixa.
                         </p>
 
-                        <div class="tw-mt-6 tw-flex tw-items-baseline tw-gap-2">
-                            <span class="tw-text-5xl max-md:tw-text-4xl tw-font-bold tw-text-white">R$ 35</span>
-                            <span class="tw-text-base tw-text-gray-400">/mês</span>
+                        <div class="tw-mt-6 max-sm:tw-mt-4 tw-flex tw-items-baseline tw-gap-2">
+                            <span class="tw-text-5xl max-sm:tw-text-3xl tw-font-bold tw-text-white">R$ 35</span>
+                            <span class="tw-text-base max-sm:tw-text-xs tw-text-gray-400">/mês</span>
                         </div>
-                        <div class="tw-mt-2 tw-text-xs tw-text-gray-400 tw-flex tw-items-center tw-gap-1.5">
+                        <div class="tw-mt-2 tw-text-xs max-sm:tw-text-[11px] tw-text-gray-400 tw-flex tw-items-center tw-gap-1.5">
                             <i class="bi bi-shield-check tw-text-white"></i>
                             <span>Sem fidelidade • Cancele quando quiser</span>
                         </div>
 
-                        <hr class="tw-my-6 tw-border-white/10" />
+                        <hr class="tw-my-6 max-sm:tw-my-4 tw-border-white/10" />
 
-                        <ul class="tw-flex tw-flex-col tw-gap-3.5 tw-text-sm tw-text-gray-300">
+                        <ul class="tw-flex tw-flex-col tw-gap-3.5 max-sm:tw-gap-2.5 tw-text-sm max-sm:tw-text-xs tw-text-gray-300">
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span><strong class="tw-text-white">Até 6 Barbeiros</strong> com logins e agendas individuais</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span>Site Próprio Personalizável (Editor Visual Estilo Canva/Elementor)</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span>Agendamentos Online Ilimitados (<strong class="tw-text-white">0% de taxa</strong> sobre seus cortes)</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
-                                <span>Robô de WhatsApp Integrado (Confirmações, Lembretes e Campanhas)</span>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
+                                <span>Lembretes e Confirmações Automáticas via WhatsApp (reduz faltas)</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
-                                <span>Financeiro Completo, Comissões Automáticas e Planilhas Excel (.XLSX)</span>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
+                                <span>Gestão Financeira, Vendas de Produtos/Bebidas e Comissões Automáticas</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
-                                <span>Suporte a Subdomínio Grátis ou Seu Domínio Próprio (.com.br)</span>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
+                                <span>Relatórios de Faturamento e Fluxo de Caixa Diário</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
-                                <span>Suporte Direto Integrado no Painel</span>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
+                                <span>Suporte via WhatsApp e Atualizações do Sistema</span>
                             </li>
                         </ul>
                     </div>
 
                     <a
-                        href="https://wa.me/5562994584529?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20no%20Plano%20Mensal%20de%20R$%2035."
+                        href="https://wa.me/5562994584520?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20com%20o%20Plano%20Mensal%20de%20R$%2035."
                         target="_blank"
-                        class="btn tw-mt-8 !tw-w-full tw-transition-all tw-duration-300 hover:tw-scale-[1.02] !tw-rounded-xl tw-py-3.5 !tw-text-white !tw-bg-transparent hover:!tw-bg-white hover:!tw-text-black !tw-border tw-border-white/30 tw-font-semibold tw-text-center tw-flex tw-items-center tw-justify-center tw-gap-2"
+                        class="btn btn-plan-mensal tw-mt-8 max-sm:tw-mt-6 !tw-w-full tw-transition-all tw-duration-300 hover:tw-scale-[1.02] !tw-rounded-xl tw-py-4 max-sm:tw-py-3 tw-font-bold tw-text-center tw-flex tw-items-center tw-justify-center tw-gap-2 tw-text-sm max-sm:tw-text-xs"
+                        style="color: #ffffff !important; background-color: rgba(255, 255, 255, 0.14) !important;"
                     >
-                        <span>Começar no Plano Mensal</span>
+                        <span>Assinar Plano Mensal</span>
                         <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
 
-                <!-- Card 2: Acesso Vitalício (Destaque Preto e Branco) -->
+                <!-- Card 2: Acesso Vitalício (Destaque) -->
                 <div
-                    class="reveal-up tw-flex tw-w-full tw-max-w-[480px] tw-flex-col tw-rounded-2xl tw-border-2 tw-border-white/40 tw-bg-[#111217] tw-p-8 md:tw-p-9 tw-shadow-[0_0_30px_rgba(255,255,255,0.05)] tw-relative tw-h-full tw-justify-between"
+                    id="pricing-card-vitalicio"
+                    class="reveal-up lg:tw-flex max-lg:tw-hidden tw-w-full tw-max-w-[480px] max-lg:tw-max-w-[330px] max-sm:tw-max-w-[300px] tw-mx-auto tw-flex-col tw-rounded-2xl tw-border tw-border-white/20 tw-bg-gradient-to-b tw-from-[#141418] tw-to-[#0c0c0e] max-sm:tw-p-5 tw-p-8 md:tw-p-9 tw-shadow-2xl tw-relative tw-h-full tw-justify-between"
                 >
-                    <!-- Badge Flutuante Monocromático no Topo -->
-                    <div class="tw-absolute -tw-top-3.5 tw-left-1/2 -tw-translate-x-1/2 tw-px-3.5 tw-py-1 tw-rounded-full tw-bg-white tw-text-black tw-text-[11px] tw-font-bold tw-uppercase tw-tracking-wider tw-shadow-md tw-whitespace-nowrap">
-                        PAGAMENTO ÚNICO • ACESSO VITALÍCIO
-                    </div>
+                    
 
                     <div>
                         <div class="tw-inline-flex tw-items-center tw-gap-1.5 tw-px-3 tw-py-1 tw-rounded-full tw-bg-white/10 tw-border tw-border-white/20 tw-text-white tw-text-xs tw-font-semibold tw-mb-4">
                             Mais Escolhido • Plataforma Sua Para Sempre
                         </div>
-                        <h3 class="tw-text-3xl tw-font-bold tw-text-white">
+                        <h3 class="tw-text-3xl max-sm:tw-text-2xl tw-font-bold tw-text-white">
                             Acesso Vitalício
                         </h3>
-                        <p class="tw-mt-2 tw-text-gray-300 tw-text-sm tw-leading-relaxed">
+                        <p class="tw-mt-2 tw-text-gray-300 tw-text-sm max-sm:tw-text-xs tw-leading-relaxed">
                             Pague o equivalente a 10 meses uma única vez e a plataforma é sua para sempre.
                         </p>
 
-                        <div class="tw-mt-6 tw-flex tw-items-baseline tw-gap-2">
-                            <span class="tw-text-5xl max-md:tw-text-4xl tw-font-extrabold tw-text-white">R$ 350</span>
-                            <span class="tw-text-sm tw-font-medium tw-text-gray-400 tw-uppercase tw-tracking-wide">pagamento único</span>
+                        <div class="tw-mt-6 max-sm:tw-mt-4 tw-flex tw-items-baseline tw-gap-2">
+                            <span class="tw-text-5xl max-sm:tw-text-3xl tw-font-extrabold tw-text-white">R$ 350</span>
+                            <span class="tw-text-sm max-sm:tw-text-xs tw-font-medium tw-text-gray-400 tw-uppercase tw-tracking-wide">pagamento único</span>
                         </div>
-                        <div class="tw-mt-2 tw-text-xs tw-text-gray-400 tw-flex tw-items-center tw-gap-1.5">
+                        <div class="tw-mt-2 tw-text-xs max-sm:tw-text-[11px] tw-text-gray-400 tw-flex tw-items-center tw-gap-1.5">
                             <i class="bi bi-shield-check tw-text-white"></i>
                             <span>Sem mensalidades • Sem taxas ocultas</span>
                         </div>
 
-                        <hr class="tw-my-6 tw-border-white/15" />
+                        <hr class="tw-my-6 max-sm:tw-my-4 tw-border-white/15" />
 
-                        <ul class="tw-flex tw-flex-col tw-gap-3.5 tw-text-sm tw-text-gray-200">
+                        <ul class="tw-flex tw-flex-col tw-gap-3.5 max-sm:tw-gap-2.5 tw-text-sm max-sm:tw-text-xs tw-text-gray-200">
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span><strong class="tw-text-white">Tudo do Plano Mensal</strong> liberado para sempre</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span><strong class="tw-text-white">Até 6 Barbeiros</strong> com logins e agendas individuais</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span>Site Próprio + Editor Visual Ao Vivo + Domínio Próprio (.com.br)</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span>Robô de WhatsApp Integrado + Recuperador de Clientes Sumidos</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span>Financeiro Completo, Comissões e Exportação Excel (.XLSX 5 Abas)</span>
                             </li>
-                            <li class="tw-flex tw-items-start tw-gap-2.5 tw-p-2.5 tw-rounded-lg tw-bg-white/5 tw-border tw-border-white/10">
+                            <li class="tw-flex tw-items-start tw-gap-2.5 tw-p-2.5 max-sm:tw-p-2 tw-rounded-lg tw-bg-white/5 tw-border tw-border-white/10">
                                 <i class="bi bi-star-fill tw-text-white tw-mt-0.5"></i>
                                 <span class="tw-text-white tw-font-semibold">BÔNUS EXCLUSIVO: Recebe TODAS as futuras atualizações e novas funções gratuitamente para sempre!</span>
                             </li>
                             <li class="tw-flex tw-items-start tw-gap-2.5">
-                                <i class="bi bi-check2 tw-text-white tw-text-lg tw-leading-none"></i>
+                                <i class="bi bi-check2 tw-text-white tw-text-lg max-sm:tw-text-base tw-leading-none"></i>
                                 <span><strong class="tw-text-white">Suporte VIP Prioritário</strong> na configuração inicial</span>
                             </li>
                         </ul>
                     </div>
 
                     <a
-                        href="https://wa.me/5562994584529?text=Ol%C3%A1!%20Quero%20aproveitar%20a%20condi%C3%A7%C3%A3o%20do%20Acesso%20Vital%C3%ADcio%20por%20R$%20350."
+                        href="https://wa.me/5562994584520?text=Ol%C3%A1!%20Quero%20aproveitar%20a%20condi%C3%A7%C3%A3o%20do%20Acesso%20Vital%C3%ADcio%20por%20R$%20350."
                         target="_blank"
-                        class="btn tw-mt-8 !tw-w-full tw-transition-all tw-duration-300 hover:tw-scale-[1.02] !tw-rounded-xl tw-py-4 !tw-text-black !tw-bg-white hover:!tw-bg-gray-200 tw-font-bold tw-text-center tw-flex tw-items-center tw-justify-center tw-gap-2 tw-shadow-lg"
+                        class="btn tw-mt-8 max-sm:tw-mt-6 !tw-w-full tw-transition-all tw-duration-300 hover:tw-scale-[1.02] !tw-rounded-xl tw-py-4 max-sm:tw-py-3 !tw-text-black !tw-bg-white hover:!tw-bg-gray-200 tw-font-bold tw-text-center tw-flex tw-items-center tw-justify-center tw-gap-2 tw-shadow-lg tw-text-sm max-sm:tw-text-xs"
                     >
                         <span>Garantir Acesso Vitalício por R$ 350</span>
                         <i class="bi bi-arrow-right"></i>
@@ -1814,8 +1408,6 @@
                 </div>
             </div>
         </section>
-
-        
 
         <section
             class="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
@@ -1900,13 +1492,17 @@
         </section>
 
         <section
-            class="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[5%] tw-p-[5%] tw-px-[10%]"
+            class="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-py-24 max-md:tw-py-16 tw-px-[10%]"
         >   
-            <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal">
+            <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-max-w-4xl">
                 Fale com gente de verdade. Nada de robôs. Estamos online para te ajudar agora.
             </h3>
-            <a href="https://wa.me/5562994584529?text=Ol%C3%A1,%20Vim%20pelo%20site,%20gostaria%20de%20tirar%20duvidas%20sobre%20os%20planos." class="btn  reveal-up !tw-rounded-full !tw-p-4 tw-font-medium">
-                Chamar no whatsapp
+            <a
+                href="https://wa.me/5562994584520?text=Ol%C3%A1,%20Vim%20pelo%20site,%20gostaria%20de%20tirar%20duvidas%20sobre%20os%20planos."
+                class="btn reveal-up tw-mt-12 max-md:tw-mt-8 !tw-rounded-full !tw-px-8 !tw-py-4 tw-font-bold tw-flex tw-items-center tw-gap-2.5 tw-transition-all tw-duration-300 hover:tw-scale-105 tw-shadow-lg"
+            >
+                <i class="bi bi-whatsapp tw-text-xl"></i>
+                <span>Chamar no WhatsApp</span>
             </a>
         </section>
 
