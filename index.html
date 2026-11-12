@@ -40,7 +40,58 @@
             gtag('config', 'G-');
         </script>
 
-    </head>
+    
+<style>
+.dlux-nav-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+.dlux-nav-dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+.dlux-nav-dropdown-item .badge {
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: 700;
+    color: #a1a1aa;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    flex-shrink: 0;
+}
+.dlux-nav-dropdown-item:hover .badge {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.12);
+}
+.dlux-nav-dropdown-item .info {
+    display: flex;
+    flex-direction: column;
+}
+.dlux-nav-dropdown-item .title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #e2e8f0;
+    line-height: 1.2;
+}
+.dlux-nav-dropdown-item:hover .title {
+    color: #ffffff;
+}
+.dlux-nav-dropdown-item .sub {
+    font-size: 10px;
+    color: #71717a;
+    line-height: 1.2;
+    margin-top: 2px;
+}
+</style>
+
+</head>
     <body
         class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] 
             tw-text-black dark:tw-bg-black  dark:tw-text-white"
@@ -58,12 +109,14 @@
             <a class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center" href="#">
                
 
-                <div class="tw-h-[30px] tw-max-w-[100px]">
+                <div class="tw-h-[34px] tw-flex tw-items-center tw-gap-2.5">
                     <img
-                        src="./assets/images/home/logolc.png"
-                        alt="logo"
-                        class="tw-object-contain tw-h-full tw-w-full"
+                        src="./assets/logo/logo.png"
+                        alt="DluxOS Logo"
+                        class="tw-object-contain tw-h-full tw-w-auto"
+                        style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));"
                     />
+                    <span class="tw-text-base tw-font-bold tw-tracking-wider tw-text-white tw-hidden sm:tw-inline-block">DLUX<span class="tw-text-white/60">OS</span></span>
                 </div>
                 
             </a>
@@ -80,7 +133,62 @@
                     <a class="header-links" href="#solucao" onclick="event.preventDefault(); document.querySelector('#solucao').scrollIntoView({behavior:'smooth'})"> Solução </a>
                     <a class="header-links" href="#pricing" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})"> Preços </a>
                    
-                    <a class="header-links" href="/recursos/"> Recursos </a>
+                    <div class="tw-relative tw-group">
+                        <a class="header-links tw-inline-flex tw-items-center tw-gap-1.5 tw-cursor-pointer" href="/recursos/">
+                            <span>Recursos</span>
+                            <svg class="tw-w-3.5 tw-h-3.5 tw-transition-transform tw-duration-200 group-hover:tw-rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="tw-hidden group-hover:tw-block hover:tw-block tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-full tw-pt-2 tw-z-50 tw-w-[360px]">
+                            <div style="background: rgba(13, 13, 15, 0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 14px; box-shadow: 0 20px 45px rgba(0,0,0,0.9); padding: 8px; display: flex; flex-direction: column; gap: 3px;">
+                                <div style="padding: 8px 12px 6px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #a1a1aa;">Recursos &amp; Especificações</span>
+                                    <span style="font-size: 9px; padding: 2px 6px; background: rgba(255,255,255,0.06); border-radius: 4px; color: #e2e8f0; font-family: monospace;">v2.0</span>
+                                </div>
+                                <a href="/recursos/#cat-01" class="dlux-nav-dropdown-item">
+                                    <span class="badge">01</span>
+                                    <div class="info"><span class="title">Agendamento &amp; Vitrine 24h</span><span class="sub">Link na bio, sem senhas, buffer inteligente</span></div>
+                                </a>
+                                <a href="/recursos/#cat-02" class="dlux-nav-dropdown-item">
+                                    <span class="badge">02</span>
+                                    <div class="info"><span class="title">Controle de Agenda &amp; Pausas</span><span class="sub">Bloqueios rápidos, almoço e folgas</span></div>
+                                </a>
+                                <a href="/recursos/#cat-03" class="dlux-nav-dropdown-item">
+                                    <span class="badge">03</span>
+                                    <div class="info"><span class="title">Gestão de Serviços &amp; Preços</span><span class="sub">Catálogo dinâmico, combos e durações</span></div>
+                                </a>
+                                <a href="/recursos/#cat-04" class="dlux-nav-dropdown-item">
+                                    <span class="badge">04</span>
+                                    <div class="info"><span class="title">WhatsApp &amp; Anti-Ban</span><span class="sub">Lembretes humanizados, confirmação 1-clique</span></div>
+                                </a>
+                                <a href="/recursos/#cat-05" class="dlux-nav-dropdown-item">
+                                    <span class="badge">05</span>
+                                    <div class="info"><span class="title">Finanças &amp; Comissões</span><span class="sub">DRE diário, repasse de barbeiros e split</span></div>
+                                </a>
+                                <a href="/recursos/#cat-06" class="dlux-nav-dropdown-item">
+                                    <span class="badge">06</span>
+                                    <div class="info"><span class="title">Equipe Multi-Barbeiros</span><span class="sub">Acessos individuais, limites e comissões</span></div>
+                                </a>
+                                <a href="/recursos/#cat-07" class="dlux-nav-dropdown-item">
+                                    <span class="badge">07</span>
+                                    <div class="info"><span class="title">Visual Studio Builder</span><span class="sub">Editor ao vivo da vitrine e personalização</span></div>
+                                </a>
+                                <a href="/recursos/#cat-08" class="dlux-nav-dropdown-item">
+                                    <span class="badge">08</span>
+                                    <div class="info"><span class="title">Base de Clientes (CRM)</span><span class="sub">Histórico de cortes, LTV e radar de retorno</span></div>
+                                </a>
+                                <a href="/recursos/#cat-09" class="dlux-nav-dropdown-item">
+                                    <span class="badge">09</span>
+                                    <div class="info"><span class="title">Suporte &amp; Segurança</span><span class="sub">Backups diários, LGPD e alta disponibilidade</span></div>
+                                </a>
+                                <a href="/recursos/" style="margin-top: 4px; padding: 10px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #ffffff; font-size: 11px; font-weight: 700; transition: all 0.15s ease;">
+                                    <span>Ver todas as especificações completas</span>
+                                    <span style="color: #a1a1aa;">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     
                 </nav>
                 <div
@@ -1801,15 +1909,15 @@
                 <div
                     class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
                 >   
-                    <a href="#" class="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6">
+                    <a href="#" class="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-3">
                         <img
-                            src="./assets/images/home/logolc.png"
-                            alt="logo"
-                            srcset=""
-                            class="tw-max-w-[120px]"
+                            src="./assets/logo/logo.png"
+                            alt="DluxOS Logo"
+                            class="tw-max-w-[70px] tw-h-auto"
+                            style="filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));"
                         />
-                        <div class="tw-max-w-[120px] tw-text-center tw-text-3xl tw-h-fit">
-                            LUXCUT
+                        <div class="tw-text-center tw-text-2xl tw-font-bold tw-tracking-wider tw-text-white">
+                            Dlux<span class="tw-text-white/60">OS</span>
                         </div>
                     </a>
                     <!-- <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div> -->
@@ -1828,33 +1936,27 @@
                 </div>
 
                 <div class="tw-flex max-md:tw-flex-col tw-flex-wrap tw-gap-6 tw-h-full tw-w-full tw-justify-around">
-                    <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
-                        <h2 class="tw-text-xl">Recursos</h2>
-                        <div class="tw-flex tw-flex-col tw-gap-3">
-                            <a href="pages/agendamento.html" class="footer-link">Agendamento automático</a>
-                            <a href="pages/financeiro.html" class="footer-link">Painel financeiro</a>
-                            <a href="pages/bloqueio-horarios.html" class="footer-link">Bloqueio de horários</a>
-                            <a href="pages/servicos.html" class="footer-link">Serviços</a>
-                            <a href="pages/produtos.html" class="footer-link">Adicionar produtos (Em breve)</a>
-                        </div>
-                    </div>
-
-
-                    <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
-                        <h2 class="tw-text-xl">Software</h2>
-                        <div class="tw-flex tw-flex-col tw-gap-3">
-                            <a href="pages/suporte.html" class="footer-link">Canais de suporte</a>
-                            <a href="pages/sistema.html" class="footer-link">Sistema</a>
-                            <a href="pages/sobre.html" class="footer-link">Sobre</a>
-                            <a href="pages/desenvolvedor.html" class="footer-link">Desenvolvedor</a>
+                    <div class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-4">
+                        <h2 class="tw-text-xl tw-font-bold tw-text-white">Recursos</h2>
+                        <div class="tw-flex tw-flex-col tw-gap-2.5">
+                            <a href="/recursos/#cat-01" class="footer-link">01 • Agendamento &amp; Vitrine 24h</a>
+                            <a href="/recursos/#cat-02" class="footer-link">02 • Controle de Agenda &amp; Pausas</a>
+                            <a href="/recursos/#cat-03" class="footer-link">03 • Gestão de Serviços &amp; Preços</a>
+                            <a href="/recursos/#cat-04" class="footer-link">04 • WhatsApp &amp; Anti-Ban</a>
+                            <a href="/recursos/#cat-05" class="footer-link">05 • Finanças &amp; Comissões</a>
+                            <a href="/recursos/#cat-06" class="footer-link">06 • Equipe Multi-Barbeiros</a>
+                            <a href="/recursos/#cat-07" class="footer-link">07 • Visual Studio Builder</a>
+                            <a href="/recursos/#cat-08" class="footer-link">08 • Base de Clientes (CRM)</a>
+                            <a href="/recursos/#cat-09" class="footer-link">09 • Suporte &amp; Segurança</a>
                         </div>
                     </div>
 
                     <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
-                        <h2 class="tw-text-xl">Legal</h2>
-                        <div class="tw-flex tw-flex-col tw-gap-3">
-                            <a href="pages/termos.html" class="footer-link">Termos de serviço</a>
-                            <a href="pages/privacidade.html" class="footer-link">Política de privacidade</a>
+                        <h2 class="tw-text-xl tw-font-bold tw-text-white">Legal &amp; Segurança</h2>
+                        <div class="tw-flex tw-flex-col tw-gap-2.5">
+                            <a href="/termos/" class="footer-link">Termos de Serviço</a>
+                            <a href="/privacidade/" class="footer-link">Política de Privacidade (LGPD)</a>
+                            <a href="/recursos/#cat-09" class="footer-link">Segurança e Backup</a>
                         </div>
                     </div>
                 </div>
