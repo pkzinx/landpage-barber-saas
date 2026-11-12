@@ -113,6 +113,8 @@
                     <img
                         src="./assets/logo/logo.png"
                         alt="DluxOS Logo"
+                        width="120"
+                        height="34"
                         style="height: 34px; max-height: 34px; width: auto; max-width: 150px; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6)); display: block;"
                     />
                 </div>
@@ -190,14 +192,22 @@
                     
                 </nav>
                 <div
-                    class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full 
+                    class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[16px] tw-text-base max-md:tw-w-full 
                             max-md:tw-flex-col max-md:tw-place-content-center"
                 >
                     <a
+                        href="/painel"
+                        class="tw-inline-flex tw-items-center tw-gap-1.5 tw-text-sm tw-font-semibold tw-text-gray-200 hover:tw-text-white tw-transition-colors"
+                        title="Acessar o Painel de Gestão"
+                    >
+                        <span>Acessar Painel</span>
+                        <i class="bi bi-box-arrow-in-right"></i>
+                    </a>
+                    <a
                         href="#pricing"
-                        aria-label="Try Pixa Playground" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})"
-                        class="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform 
-                                    tw-duration-[0.3s] hover:tw-translate-x-2"
+                        aria-label="Ver Planos" onclick="event.preventDefault(); document.querySelector('#pricing').scrollIntoView({behavior:'smooth'})"
+                        class="btn tw-flex tw-gap-2 tw-px-4 tw-py-2 tw-transition-transform 
+                                    tw-duration-[0.3s] hover:tw-translate-x-1"
                     >
                         <span>Planos</span>
                         <i class="bi bi-arrow-right"></i>

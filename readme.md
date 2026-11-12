@@ -25,10 +25,10 @@ A **Landing Page B2B do DluxOS Barbers** é a vitrine comercial oficial da plata
 
 | Arquivo / Rota | URL Local (Dev) | URL Produção | Descrição |
 |:---|:---|:---|:---|
-| `index.html` | `http://localhost:5000/` | `https://dluxos.com.br/` | **Landing Page Principal**: Hero banner, prova social, comparativos, planos de preço, FAQ e rodapé institucional. |
-| `recursos/index.html`<br>`recursos.html` | `http://localhost:5000/recursos/` | `https://dluxos.com.br/recursos/` | **Especificações Completas**: Detalhamento dos 9 módulos com índice lateral *sticky* numerado e *scroll spy* ativo. |
-| `termos/index.html`<br>`termos.html` | `http://localhost:5000/termos/` | `https://dluxos.com.br/termos/` | **Termos de Serviço**: 8 cláusulas contratuais, licença de uso SaaS, SLA de 99,5%, garantia de 7 dias (CDC) e foro. |
-| `privacidade/index.html`<br>`privacidade.html` | `http://localhost:5000/privacidade/` | `https://dluxos.com.br/privacidade/` | **Política de Privacidade (LGPD)**: 9 cláusulas em conformidade com a Lei 13.709/18, segurança, criptografia e DPO. |
+| `index.html` | `http://localhost:5000/` | `https://dluxos.store/` | **Landing Page Principal**: Hero banner, prova social, comparativos, planos de preço, FAQ e rodapé institucional. |
+| `recursos/index.html`<br>`recursos.html` | `http://localhost:5000/recursos/` | `https://dluxos.store/recursos/` | **Especificações Completas**: Detalhamento dos 9 módulos com índice lateral *sticky* numerado e *scroll spy* ativo. |
+| `termos/index.html`<br>`termos.html` | `http://localhost:5000/termos/` | `https://dluxos.store/termos/` | **Termos de Serviço**: 8 cláusulas contratuais, licença de uso SaaS, SLA de 99,5%, garantia de 7 dias (CDC) e foro. |
+| `privacidade/index.html`<br>`privacidade.html` | `http://localhost:5000/privacidade/` | `https://dluxos.store/privacidade/` | **Política de Privacidade (LGPD)**: 9 cláusulas em conformidade com a Lei 13.709/18, segurança, criptografia e DPO. |
 
 ---
 
@@ -68,11 +68,11 @@ npx serve -l 5000 .
 
 ## 🌐 Configuração em Produção (Caddy / Nginx)
 
-No servidor de produção (`Caddyfile.production`), as requisições para o domínio raiz comercial (`dluxos.com.br` e `www.dluxos.com.br`) podem ser servidas diretamente como arquivos estáticos ou roteadas para o Next.js na rota `/vendas`:
+No servidor de produção (`Caddyfile.production`), as requisições para o domínio raiz comercial (`dluxos.store` e `www.dluxos.store`) podem ser servidas diretamente como arquivos estáticos ou roteadas para o Next.js na rota `/vendas`:
 
 ```caddy
 # Exemplo de bloco estático no Caddy:
-dluxos.com.br {
+dluxos.store {
     root * /var/www/landpage-barber-saas
     file_server
     try_files {path} {path}/ /index.html
