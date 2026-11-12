@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="tw-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos &amp; Especificações Completas • DluxOS Barbers</title>
+    <meta name="description" content="Especificações editoriais completas de todas as funcionalidades do DluxOS Barbers: agendamento, financeiro, WhatsApp, equipe e personalização.">
+
+    <!-- Estilos Oficiais da LP -->
+    <link rel="stylesheet" href="./css/tailwind-build.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #000000 !important;
+            color: #E2E8F0;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .editorial-font {
+            font-family: 'Space Grotesk', system-ui, sans-serif;
+        }
+        .toc-link.active {
+            color: #FFFFFF !important;
+            border-left-color: #FFFFFF !important;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="tw-bg-black tw-text-gray-200 tw-antialiased tw-selection:bg-white/20 tw-selection:text-white">
+
+    <!-- Top Navbar Editorial -->
+    <header class="tw-sticky tw-top-0 tw-z-50 tw-w-full tw-border-b tw-border-white/[0.08] tw-bg-black/85 tw-backdrop-blur-xl">
+        <div class="tw-mx-auto tw-flex tw-h-20 tw-max-w-7xl tw-items-center tw-justify-between tw-px-6">
+            <a href="/" class="tw-flex tw-items-center tw-gap-3 tw-group">
+                <div class="tw-flex tw-h-10 tw-w-10 tw-items-center tw-justify-center tw-rounded-xl tw-border tw-border-white/20 tw-bg-white/[0.06] tw-transition-colors group-hover:tw-border-white/40">
+                    <span class="tw-text-base tw-font-bold tw-text-white">D</span>
+                </div>
+                <div class="tw-flex tw-flex-col">
+                    <span class="tw-text-lg tw-font-bold tw-tracking-tight tw-text-white">DluxOS</span>
+                    <span class="tw-text-[10px] tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Barbers v2.0</span>
+                </div>
+            </a>
+
+            <div class="tw-flex tw-items-center tw-gap-4">
+                <a href="/" class="tw-hidden sm:tw-inline-flex tw-items-center tw-gap-2 tw-text-sm tw-font-medium tw-text-gray-400 hover:tw-text-white tw-transition-colors">
+                    <i class="bi bi-arrow-left"></i>
+                    <span>Voltar para a Página Inicial</span>
+                </a>
+                <a href="/#pricing" class="tw-inline-flex tw-items-center tw-gap-2 tw-rounded-full tw-border tw-border-white/30 tw-bg-white tw-px-5 tw-py-2 tw-text-sm tw-font-semibold tw-text-black hover:tw-bg-gray-200 tw-transition-all hover:tw-scale-[1.02]">
+                    <span>Garantir Meu Acesso</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Editorial Content -->
+    <main class="tw-mx-auto tw-max-w-7xl tw-px-6 tw-py-16 lg:tw-py-24">
+
+        <!-- Hero Header -->
+        <div class="tw-max-w-4xl tw-pb-16 tw-border-b tw-border-white/[0.08]">
+            <div class="tw-inline-flex tw-items-center tw-gap-2.5 tw-rounded-full tw-border tw-border-white/15 tw-bg-white/[0.04] tw-px-4 tw-py-1.5 tw-text-xs tw-font-semibold tw-tracking-wider tw-text-gray-300 tw-uppercase">
+                <span class="tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-white"></span>
+                <span>Especificações Completas do Sistema • DluxOS Barbers v2.0</span>
+            </div>
+            
+            <h1 class="editorial-font tw-mt-8 tw-text-3xl md:tw-text-5xl lg:tw-text-6xl tw-font-bold tw-tracking-tight tw-text-white tw-leading-[1.15]">
+                Cada função construída para colocar dinheiro no caixa e devolver o seu tempo.
+            </h1>
+
+            <p class="tw-mt-8 tw-text-lg md:tw-text-xl tw-text-gray-400 tw-leading-relaxed tw-font-normal">
+                O DluxOS não é apenas uma agenda online. É uma infraestrutura completa de gestão, atendimento automatizado, marketing de retenção e controle financeiro desenhada especificamente para a rotina real de uma barbearia. Abaixo você encontra a descrição detalhada de absolutamente todas as ferramentas incluídas no seu painel — sem letras miúdas e sem funções bloqueadas.
+            </p>
+        </div>
+
+        <!-- 2 Columns: Sticky TOC + Editorial Sections -->
+        <div class="tw-mt-16 tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-12 lg:tw-gap-16">
+
+            <!-- Sidebar TOC (Desktop) -->
+            <aside class="tw-hidden lg:tw-block lg:tw-col-span-4">
+                <div class="tw-sticky tw-top-32 tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6 tw-backdrop-blur-sm">
+                    <div class="tw-text-xs tw-font-bold tw-tracking-widest tw-text-gray-400 tw-uppercase tw-mb-4">
+                        Índice de Especificações
+                    </div>
+                    <nav class="tw-flex tw-flex-col tw-gap-1 text-sm">
+                        <a href="#cat-01" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">01</span>
+                            <span>Agendamento &amp; Vitrine 24h</span>
+                        </a>
+                        <a href="#cat-02" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">02</span>
+                            <span>Controle de Agenda &amp; Pausas</span>
+                        </a>
+                        <a href="#cat-03" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">03</span>
+                            <span>Serviços &amp; Preços</span>
+                        </a>
+                        <a href="#cat-04" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">04</span>
+                            <span>WhatsApp &amp; Anti-Ban</span>
+                        </a>
+                        <a href="#cat-05" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">05</span>
+                            <span>Finanças &amp; Comissões</span>
+                        </a>
+                        <a href="#cat-06" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">06</span>
+                            <span>Equipe Multi-Barbeiros</span>
+                        </a>
+                        <a href="#cat-07" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">07</span>
+                            <span>Visual Studio Builder</span>
+                        </a>
+                        <a href="#cat-08" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">08</span>
+                            <span>Base de Clientes (CRM)</span>
+                        </a>
+                        <a href="#cat-09" class="toc-link tw-flex tw-items-center tw-gap-3 tw-py-2 tw-px-3 tw-text-xs tw-text-gray-400 hover:tw-text-white tw-border-l-2 tw-border-transparent hover:tw-border-white/30 tw-transition-colors">
+                            <span class="tw-font-mono tw-text-gray-500">09</span>
+                            <span>Suporte &amp; Segurança</span>
+                        </a>
+                    </nav>
+
+                    <div class="tw-mt-8 tw-pt-6 tw-border-t tw-border-white/[0.08]">
+                        <a href="/#pricing" class="tw-w-full tw-flex tw-items-center tw-justify-center tw-gap-2 tw-rounded-xl tw-border tw-border-white/20 tw-bg-white/[0.08] hover:tw-bg-white/[0.16] tw-py-2.5 tw-text-xs tw-font-semibold tw-text-white tw-transition-all">
+                            <span>Ver Planos &amp; Preços</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Editorial Body (Col 8) -->
+            <div class="lg:tw-col-span-8 tw-space-y-24">
+
+                <!-- CATEGORIA 01 -->
+                <section id="cat-01" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">01</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Experiência do Cliente</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Agendamento Online Inteligente &amp; Vitrine Pública 24h
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-phone tw-text-gray-400"></i>
+                                Zero Aplicativos e Zero Senhas para o Cliente
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                O cliente clica no link da sua Bio do Instagram, escolhe o serviço, o profissional, o dia e o horário livre e confirma em menos de 15 segundos informando apenas Nome e WhatsApp. Sem baixar nada na App Store/Play Store e sem esquecer senhas.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-shield-check tw-text-gray-400"></i>
+                                Cálculo de Disponibilidade em Tempo Real com Buffer Anti-Atraso
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                O motor de horários calcula automaticamente a duração exata de cada serviço e aplica uma margem inteligente de segurança entre atendimentos, garantindo que dois clientes jamais agendem no mesmo horário mesmo clicando no exato mesmo segundo.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-key tw-text-gray-400"></i>
+                                Cancelamento Inteligente pelo Próprio Cliente (Token Seguro)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Cada agendamento gera um link único e seguro de cancelamento. Se o cliente tiver um imprevisto e cancelar, o horário volta a ficar livre no site imediatamente para outro cliente ocupar a cadeira, e o barbeiro é avisado na hora.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-clock-history tw-text-gray-400"></i>
+                                Conclusão Automática de Cortes Passados
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                O sistema identifica atendimentos cujo horário já passou e consolida o histórico automaticamente, mantendo sua agenda sempre limpa e o caixa atualizado.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CATEGORIA 02 -->
+                <section id="cat-02" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">02</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Operação Diária</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Controle Total de Agenda, Bloqueio de Horários e Pausas (Imprevistos Controlados)
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-pause-circle tw-text-gray-400"></i>
+                                Pausar Horários Específicos ou Intervalo de Almoço
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Precisa sair para resolver algo das 13h às 15h ou definir horário de almoço? Com dois toques no painel (<code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">/painel/agenda/</code>), você cria um bloqueio parcial informando o horário de início, fim e motivo. O site público oculta apenas aquela faixa de horário automaticamente.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-calendar-x tw-text-gray-400"></i>
+                                Trancar o Dia Inteiro (Folgas, Feriados ou Imprevistos)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Marque a opção <em>"Dia Inteiro"</em> para fechar a agenda de um barbeiro específico naquele dia sem afetar os horários dos outros profissionais da equipe.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-plus-circle tw-text-gray-400"></i>
+                                Agendamento Manual Rápido (Cliente de Balcão / WhatsApp)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Atendeu um cliente que chegou sem marcar ou pediu pelo telefone? O barbeiro lança o agendamento manualmente pelo painel em segundos, travando o horário no site na mesma hora.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-pencil-square tw-text-gray-400"></i>
+                                Edição, Reagendamento e Mudança de Status em 1 Toque
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Altere o status entre <em>Agendado</em>, <em>Concluído</em> ou <em>Cancelado</em>, troque o serviço realizado ou ajuste o método de pagamento diretamente pelo card do cliente na agenda.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CATEGORIA 03 -->
+                <section id="cat-03" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">03</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Catálogo &amp; Preços</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Gestão de Serviços, Preços e Destaques da Vitrine
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-scissors tw-text-gray-400"></i>
+                                Criação, Edição e Exclusão Ilimitada de Serviços
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Cadastre quantos serviços quiser (Corte Degradê, Barba Terapia, Sobrancelha, Luzes, Platinado, Selagem, Combos) definindo nome, descrição, preço exato em reais e tempo de duração em minutos.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-toggle-on tw-text-gray-400"></i>
+                                Pausar / Ativar Serviços Instantaneamente
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Quer tirar um serviço do ar temporariamente sem apagar o histórico dele? Basta desativar a chave de exibição e ele some do site público na hora.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-arrow-down-up tw-text-gray-400"></i>
+                                Ordem de Exibição Personalizada
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Defina qual serviço aparece primeiro na lista de agendamento para induzir o cliente aos seus combos de maior ticket médio.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-star tw-text-gray-400"></i>
+                                Seleção dos 3 Serviços Carros-Chefes da Home
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Escolha no painel exatamente quais 3 serviços principais aparecerão em destaque com foto e botão direto na página inicial do seu site.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CATEGORIA 04 -->
+                <section id="cat-04" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">04</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Automação &amp; Marketing</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Automação de WhatsApp, Filas Anti-Ban e Recuperação de Clientes
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-qr-code-scan tw-text-gray-400"></i>
+                                Conexão Direta via QR Code (No Seu Próprio Número)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Conecte o WhatsApp oficial da sua barbearia lendo o QR Code direto na tela do painel, com indicador de status ao vivo (<em>Conectado</em>, <em>Aguardando Leitura</em> ou <em>Pausado</em>).
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-chat-dots tw-text-gray-400"></i>
+                                Notificações Automáticas de Confirmação, Lembrete e Cancelamento
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Assim que o cliente agenda no site, ele recebe no WhatsApp os dados do corte, dia, hora, profissional, valor e link de localização/cancelamento. O barbeiro também recebe alertas em tempo real. Lembretes automáticos antes do horário marcado reduzem faltas em até 80%.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-braces tw-text-gray-400"></i>
+                                Editor de Mensagens com Variáveis Dinâmicas
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Personalize os textos das mensagens automáticas usando tags inteligentes como <code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">{cliente}</code>, <code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">{barbeiro}</code>, <code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">{servico}</code>, <code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">{data}</code>, <code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">{hora}</code> e <code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">{valor}</code> — o sistema substitui pelo nome real de cada cliente no envio.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-people tw-text-gray-400"></i>
+                                Disparador de Campanhas para Clientes Sumidos (+20, +30, +40 dias)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Filtre automaticamente na sua base todos os clientes que não cortam há mais de 20, 30 ou 40 dias e envie uma campanha promocional personalizada chamando cada um pelo nome para lotar seus dias mais fracos (como terça e quarta-feira).
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-shield-lock tw-text-gray-400"></i>
+                                Motor Anti-Ban com Controle de Delay e Fila Inteligente
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Configure o intervalo de segundos entre cada mensagem e o limite por minuto. Você pode pausar os disparos a qualquer momento, testar o envio em um número específico ou reprocessar mensagens pendentes com 1 clique.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CATEGORIA 05 -->
+                <section id="cat-05" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">05</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Controle de Caixa</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Engenharia Financeira, Comissões Automáticas, Vendas e Sangrias
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-pie-chart tw-text-gray-400"></i>
+                                Cálculo Automático de Comissões por Barbeiro
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Configure a porcentagem individual de cada profissional (ex: 40%, 50%) ou marque barbeiros como <strong>Sócios/Donos (100%)</strong>. A cada corte concluído, o sistema separa automaticamente o que é comissão do barbeiro e o que é lucro líquido da barbearia.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-cart tw-text-gray-400"></i>
+                                Lançamento de Vendas Avulsas (Produtos &amp; Bebidas)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Vendeu uma pomada modeladora, minoxidil, cerveja ou refrigerante no balcão? Registre na aba de Vendas Avulsas vinculando ao barbeiro e à forma de pagamento (<em>Pix, Cartão, Dinheiro</em>).
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-box-arrow-right tw-text-gray-400"></i>
+                                Controle de Retiradas e Sangrias de Caixa
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Registre toda saída de dinheiro do caixa (pagamento de energia, compra de lâminas, adiantamento/vale de barbeiro) com descrição, data e responsável, descontando automaticamente do saldo líquido do período.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-graph-up-arrow tw-text-gray-400"></i>
+                                Gráficos Interativos e Filtros de Período
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Analise a evolução do seu faturamento por dia, últimos 7, 15, 30, 90 dias ou período personalizado no calendário, separando receita de cortes, vendas de produtos e desempenho individual de cada barbeiro.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-file-earmark-excel tw-text-gray-400"></i>
+                                Exportação Profissional em Excel (.XLSX de 5 Abas) e CSV
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Baixe a qualquer momento uma planilha Excel completa e formatada contendo 5 abas separadas (<em>Resumo Financeiro, Agendamentos, Vendas Avulsas, Retiradas/Sangrias e Base de Clientes</em>), pronta para sua contabilidade ou controle pessoal.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CATEGORIA 06 -->
+                <section id="cat-06" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">06</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Segurança &amp; Logins</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Equipe Multi-Barbeiros, Hierarquia de Acesso e Senhas Individuais
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-person-badge tw-text-gray-400"></i>
+                                Até 6 Barbeiros com Logins Independentes
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Cada profissional da sua barbearia tem seu próprio usuário, senha e foto de perfil para acessar o sistema pelo próprio celular.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-shield-shaded tw-text-gray-400"></i>
+                                Blindagem de Permissão (Dono vs. Barbeiro)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                <strong>Visão do Barbeiro:</strong> Visualiza e gerencia a agenda, seus próprios clientes e acompanha exclusivamente os seus ganhos/comissões, sem acesso às configurações críticas da loja nem ao lucro global do dono.<br><br>
+                                <strong>Visão do Dono/Administrador:</strong> Controle total sobre todas as agendas, financeiro consolidado da barbearia, criação/desativação de barbeiros, redefinição de senhas da equipe e personalização do site.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CATEGORIA 07 -->
+                <section id="cat-07" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">07</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Editor de Site</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Visual Studio Builder (Estilo Elementor / Canva) &amp; Domínio Próprio
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-display tw-text-gray-400"></i>
+                                Editor Visual Ao Vivo (Split-Screen Desktop &amp; Mobile)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Edite seu site no painel esquerdo enquanto vê o resultado mudar em tempo real no preview à direita, alternando entre tela de Computador, Tablet e iPhone sem precisar recarregar a página.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-cursor tw-text-gray-400"></i>
+                                Clique para Editar (Click-to-Edit) &amp; Reordenação de Seções
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Clique diretamente sobre qualquer seção do site no preview (<em>Banner Principal, Principais Serviços, Sobre Nós, Profissionais, Avaliações ou Mapa</em>) para editar seus textos, ou use as setas e o ícone de visibilidade para mudar a ordem das seções na página ou ocultar blocos que não queira exibir.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-palette tw-text-gray-400"></i>
+                                Paletas de Cores em 1 Clique &amp; Fontes do Google Fonts
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Escolha entre paletas prontas de alto padrão ou selecione qualquer cor livre, mude a tipografia dos títulos e textos e escolha o formato dos botões (<em>Arredondado, Pílula ou Reto</em>).
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-image tw-text-gray-400"></i>
+                                Otimização Automática de Fotos em Alta Definição
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Envie sua logo (com preservação total de fundo transparente PNG), banners Full HD, foto da barbearia e fotos dos barbeiros. O sistema comprime o peso das imagens para o seu site abrir instantaneamente no 4G do cliente mantendo nitidez máxima.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-geo-alt tw-text-gray-400"></i>
+                                Avaliações de Clientes, Horários e Mapa GPS
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Cadastre os depoimentos dos seus clientes com nota 5 estrelas, configure os dias e horários de funcionamento e coloque o endereço exato para o botão <em>"Como Chegar"</em> abrir o GPS direto na porta da sua barbearia.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-globe2 tw-text-gray-400"></i>
+                                Subdomínio Grátis ou Seu Domínio Próprio (.com.br)
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Use gratuitamente seu endereço <code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">.dluxos.com.br</code> no mesmo segundo ou conecte seu domínio próprio (ex: <code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">www.suabarbearia.com.br</code>) com verificador integrado de DNS e certificado de segurança HTTPS automático.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CATEGORIA 08 -->
+                <section id="cat-08" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">08</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Retenção de Clientes</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Base Inteligente de Clientes (CRM) &amp; Histórico de Frequência
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-person-check tw-text-gray-400"></i>
+                                Cadastro Automático a Cada Agendamento
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Você não precisa cadastrar clientes na mão. Todo cliente que agenda pelo site entra automaticamente para a sua lista de clientes com telefone, histórico de cortes, barbeiro preferido, data da última visita e valor total já gasto na sua barbearia (LTV).
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-search tw-text-gray-400"></i>
+                                Busca Instantânea e Acionamento Rápido
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Pesquise qualquer cliente pelo nome ou telefone em milissegundos para ver quantas vezes ele já cortou, quando foi a última visita ou abrir conversa direta no WhatsApp dele.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CATEGORIA 09 -->
+                <section id="cat-09" class="tw-scroll-mt-32">
+                    <div class="tw-flex tw-items-center tw-gap-4 tw-mb-4">
+                        <span class="editorial-font tw-text-4xl tw-font-bold tw-text-gray-600">09</span>
+                        <div class="tw-h-px tw-flex-1 tw-bg-white/[0.08]"></div>
+                        <span class="tw-text-xs tw-font-semibold tw-tracking-widest tw-text-gray-400 tw-uppercase">Infraestrutura</span>
+                    </div>
+
+                    <h2 class="editorial-font tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white">
+                        Suporte Integrado em Tempo Real &amp; Infraestrutura Blindada
+                    </h2>
+
+                    <div class="tw-mt-8 tw-space-y-8 tw-text-gray-300 tw-leading-relaxed">
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-headset tw-text-gray-400"></i>
+                                Central de Suporte, Dúvidas e Sugestões Dentro do Painel
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Precisa de ajuda, quer enviar uma sugestão de melhoria ou tirar uma dúvida sobre configuração? Envie um chamado direto de dentro do seu painel (<code class="tw-text-xs tw-text-gray-300 tw-bg-white/10 tw-px-1.5 tw-py-0.5 tw-rounded">/painel/suporte/</code>), com opção de anexar print da tela, e receba a resposta oficial da nossa equipe em tempo real sem sair do sistema.
+                            </p>
+                        </div>
+
+                        <div class="tw-rounded-2xl tw-border tw-border-white/[0.08] tw-bg-white/[0.02] tw-p-6">
+                            <h3 class="tw-text-lg tw-font-semibold tw-text-white tw-flex tw-items-center tw-gap-2.5">
+                                <i class="bi bi-hdd-network tw-text-gray-400"></i>
+                                Funcionamento Contínuo e Sem Travas
+                            </h3>
+                            <p class="tw-mt-2.5 tw-text-sm tw-text-gray-400 tw-leading-relaxed">
+                                Arquitetura de banco de dados de alta disponibilidade onde seus agendamentos e seu caixa nunca param, com isolamento total dos dados da sua barbearia.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Card Dark Glass Conclusão -->
+                <div class="tw-rounded-3xl tw-border tw-border-white/20 tw-bg-white/[0.03] tw-p-8 md:tw-p-12 tw-backdrop-blur-xl tw-text-center tw-relative tw-overflow-hidden">
+                    <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-white/[0.04] tw-to-transparent tw-pointer-events-none"></div>
+                    <div class="tw-relative tw-z-10 tw-max-w-2xl tw-mx-auto">
+                        <span class="tw-text-xs tw-font-bold tw-tracking-widest tw-text-gray-400 tw-uppercase">Tudo Incluso</span>
+                        <h3 class="editorial-font tw-mt-3 tw-text-2xl md:tw-text-4xl tw-font-bold tw-text-white">
+                            Todas essas ferramentas estão incluídas nos dois planos.
+                        </h3>
+                        <p class="tw-mt-4 tw-text-sm md:tw-text-base tw-text-gray-300 tw-leading-relaxed">
+                            No DluxOS não cobramos taxas extras por módulo nem comissão sobre os seus cortes. Escolha entre a assinatura mensal de <strong class="tw-text-white">R$ 35/mês</strong> ou o Acesso Vitalício por <strong class="tw-text-white">R$ 350</strong> (pagamento único com todas as futuras atualizações inclusas).
+                        </p>
+                        <div class="tw-mt-8 tw-flex tw-flex-wrap tw-items-center tw-justify-center tw-gap-4">
+                            <a href="/#pricing" class="tw-inline-flex tw-items-center tw-gap-2 tw-rounded-full tw-border tw-border-white/40 tw-bg-white tw-px-7 tw-py-3.5 tw-text-sm tw-font-bold tw-text-black hover:tw-bg-gray-200 tw-transition-all hover:tw-scale-[1.03]">
+                                <span>Ver Planos e Começar Agora</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="/" class="tw-inline-flex tw-items-center tw-gap-2 tw-rounded-full tw-border tw-border-white/20 tw-bg-white/[0.06] hover:tw-bg-white/[0.12] tw-px-6 tw-py-3.5 tw-text-sm tw-font-semibold tw-text-white tw-transition-all">
+                                <i class="bi bi-arrow-left"></i>
+                                <span>Voltar para a Página Inicial</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Editorial -->
+    <footer class="tw-border-t tw-border-white/[0.08] tw-py-12 tw-text-center tw-text-xs tw-text-gray-500">
+        <div class="tw-mx-auto tw-max-w-7xl tw-px-6 tw-flex tw-flex-col sm:tw-flex-row tw-items-center tw-justify-between tw-gap-4">
+            <p>© 2026 DluxOS Barbers. Todos os direitos reservados.</p>
+            <div class="tw-flex tw-gap-6">
+                <a href="/" class="hover:tw-text-white tw-transition-colors">Início</a>
+                <a href="/recursos" class="hover:tw-text-white tw-transition-colors">Recursos</a>
+                <a href="/#pricing" class="hover:tw-text-white tw-transition-colors">Planos</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Active Scroll Spy for TOC -->
+    <script>
+        const sections = document.querySelectorAll('section[id]')
+        const navLinks = document.querySelectorAll('.toc-link')
+
+        window.addEventListener('scroll', () => {
+            let current = ''
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop
+                if (pageYOffset >= sectionTop - 180) {
+                    current = section.getAttribute('id')
+                }
+            })
+
+            navLinks.forEach(link => {
+                link.classList.remove('active')
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active')
+                }
+            })
+        })
+    </script>
+</body>
+</html>
